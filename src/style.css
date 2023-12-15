@@ -409,6 +409,16 @@ body {
   color: snow;
 }
 
+.header .header-Top-Mid .right-Banner {
+  width: 50%;
+  height: 100%;
+  text-align: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
 @keyframes downBtnBefore {
   from {
     height: 100%;
