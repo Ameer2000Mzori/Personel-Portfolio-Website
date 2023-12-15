@@ -360,6 +360,7 @@ body {
   font-weight: 900;
   overflow: hidden;
   transition: all 140ms ease-in-out;
+  animation-delay: 500ms;
   font-family: "Roboto", sans-serif;
   position: relative;
   content: "";
