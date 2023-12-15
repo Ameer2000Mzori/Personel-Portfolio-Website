@@ -65,9 +65,10 @@ body {
   align-items: center;
   justify-content: start;
   background-color: #31363c;
-  position: absolute;
+  position: fixed;
   right: 1px;
   top: 0;
+  transition: all 1000ms ease-in-out;
 
   .decoration-Bar {
     height: 100%;
@@ -147,4 +148,11 @@ body {
       }
     }
   }
+}
+
+.navbar.active {
+  transform-origin: right top;
+  width: 100%;
+  transform: rotate(-150deg);
+  transform: translateX(110%);
 }

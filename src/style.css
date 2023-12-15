@@ -1,5 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Kenia&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
-
 body {
   padding: 0;
   margin: 0;
@@ -22,7 +21,6 @@ body {
   z-index: 10;
   position: fixed;
 }
-
 .open-Close-Btn .bar-One,
 .open-Close-Btn .bar-Two {
   position: relative;
@@ -34,14 +32,12 @@ body {
   display: block;
   transition: all 100ms;
 }
-
 .open-Close-Btn .bar-One.active {
   position: absolute;
   transform: rotate(45deg);
   width: 90%;
   height: 3px;
 }
-
 .open-Close-Btn .bar-Two.active {
   position: absolute;
   transform: rotate(-45deg);
@@ -58,11 +54,11 @@ body {
   align-items: center;
   justify-content: start;
   background-color: #31363c;
-  position: absolute;
+  position: fixed;
   right: 1px;
   top: 0;
+  transition: all 1000ms ease-in-out;
 }
-
 .navbar .decoration-Bar {
   height: 100%;
   width: 25%;
@@ -73,7 +69,6 @@ body {
   flex-direction: column;
   justify-content: center;
 }
-
 .navbar .decoration-Bar .cercle-One {
   width: 45px;
   height: 45px;
@@ -81,7 +76,6 @@ body {
   border: solid snow 1px;
   border-radius: 50%;
 }
-
 .navbar .decoration-Bar .line-El {
   height: 60%;
   width: 1px;
@@ -90,7 +84,6 @@ body {
   border-top: none;
   border-bottom: none;
 }
-
 .navbar .decoration-Bar .cercle-Two {
   width: 45px;
   height: 45px;
@@ -98,7 +91,6 @@ body {
   border: solid snow 1px;
   border-radius: 50%;
 }
-
 .navbar .nav-Links {
   display: flex;
   width: 100%;
@@ -106,7 +98,6 @@ body {
   text-align: center;
   align-items: center;
 }
-
 .navbar .nav-Links ul {
   width: 100%;
   height: 80%;
@@ -119,12 +110,10 @@ body {
   list-style: none;
   justify-content: center;
 }
-
 .navbar .nav-Links ul li {
   padding: 1rem;
   transition: all 100ms;
 }
-
 .navbar .nav-Links ul li a {
   font-size: 25px;
   text-decoration: none;
@@ -133,7 +122,6 @@ body {
   color: white;
   transition: all 440ms;
 }
-
 .navbar .nav-Links ul li a:hover {
   font-size: 25px;
   text-decoration: none;
@@ -141,3 +129,12 @@ body {
   font-weight: 600;
   color: rgb(174, 202, 255);
 }
+
+.navbar.active {
+  transform-origin: right top;
+  width: 100%;
+  transform: rotate(-150deg);
+  transform: translateX(110%);
+}
+
+/*# sourceMappingURL=style.css.map */
