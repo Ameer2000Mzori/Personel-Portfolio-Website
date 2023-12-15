@@ -59,7 +59,7 @@ body {
   justify-content: start;
   background-color: #31363c;
   position: fixed;
-  right: 1px;
+  right: 0;
   top: 0;
   transition: all 1000ms ease-in-out;
 }
@@ -148,4 +148,10 @@ body {
   width: 100%;
   transform: rotate(-150deg);
   transform: translateX(110%);
+}
+
+@media screen and (max-width: 768px) {
+  .navbar {
+    width: 80%;
+  }
 }
