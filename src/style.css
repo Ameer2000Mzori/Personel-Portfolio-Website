@@ -168,7 +168,7 @@ body {
 .header .header-Top-Wrap {
   display: flex;
   height: 15%;
-  width: 80%;
+  width: 95%;
   text-align: center;
   align-items: center;
   text-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.3);
@@ -196,7 +196,7 @@ body {
 }
 
 .header .header-Top-Mid {
-  width: 75%;
+  width: 90%;
   height: 100%;
   display: flex;
   flex-direction: row;
@@ -393,6 +393,19 @@ body {
   width: 5%;
   background-color: #29a587;
   animation-name: downBtnAfter;
+}
+
+.header .header-Top-Mid .mid-banner .information-Wrap .cv-Btn-Down .line-Decoration {
+  width: 40px;
+  height: 3px;
+  display: block;
+  background-color: snow;
+  margin-right: 12px;
+}
+
+.header .header-Top-Mid .mid-banner .information-Wrap .cv-Btn-Down .text-Btn-Last {
+  font-family: "Rowdies", sans-serif;
+  color: snow;
 }
 
 @keyframes downBtnBefore {
