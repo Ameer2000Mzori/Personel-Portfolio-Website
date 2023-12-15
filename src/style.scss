@@ -15,9 +15,8 @@ body {
 .open-Close-Btn {
   height: 40px;
   width: 40px;
-  position: absolute;
   right: 1rem;
-  top: 0.5rem;
+  top: 1rem;
   display: flex;
   flex-direction: column;
   text-align: center;
@@ -27,6 +26,7 @@ body {
   padding: none;
   margin: none;
   z-index: 10;
+  position: fixed;
 
   .bar-One,
   .bar-Two {
@@ -52,5 +52,47 @@ body {
     transform: rotate(-45deg);
     width: 90%;
     height: 4px;
+  }
+}
+
+// navbar
+.navbar {
+  width: 40%;
+  height: 1000px;
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  align-items: center;
+  justify-content: start;
+
+  .decoration-Bar {
+    height: 100%;
+    width: 25%;
+    text-align: center;
+    align-items: center;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    .cercle-One {
+      width: 50px;
+      height: 50px;
+      background-color: black;
+      border-radius: 50%;
+    }
+
+    .line-El {
+      height: 60%;
+      width: 5px;
+      background-color: black;
+    }
+
+    .cercle-Two {
+      width: 50px;
+      height: 50px;
+      background-color: black;
+      border-radius: 50%;
+    }
   }
 }
