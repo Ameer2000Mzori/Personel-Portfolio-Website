@@ -342,3 +342,77 @@ body {
   color: rgb(167, 165, 165);
   margin: 1rem;
 }
+
+.header .header-Top-Mid .mid-banner .information-Wrap .cv-Btn-Down {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  align-items: center;
+  padding-left: 25px;
+}
+
+.header .header-Top-Mid .mid-banner .information-Wrap .cv-Btn-Down .down-Btn {
+  padding: 15px 30px;
+  border-radius: 2rem;
+  background-color: transparent;
+  border: solid snow 2px;
+  color: snow;
+  font-weight: 900;
+  overflow: hidden;
+  transition: all 140ms ease-in-out;
+  font-family: "Roboto", sans-serif;
+  position: relative;
+  content: "";
+}
+
+.header .header-Top-Mid .mid-banner .information-Wrap .cv-Btn-Down .down-Btn::after {
+  content: "";
+  display: block;
+  position: absolute;
+  z-index: -1;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 100%;
+  width: 100%;
+  border-radius: 5rem;
+  background-color: #29a587;
+  animation-name: downBtnBefore;
+  animation-duration: 1s;
+  animation-fill-mode: both;
+  animation-direction: alternate;
+}
+
+.header .header-Top-Mid .mid-banner .information-Wrap .cv-Btn-Down .down-Btn:hover {
+  cursor: pointer;
+}
+
+.header .header-Top-Mid .mid-banner .information-Wrap .cv-Btn-Down .down-Btn:hover::after {
+  content: "";
+  height: 5%;
+  width: 5%;
+  background-color: #29a587;
+  animation-name: downBtnAfter;
+}
+
+@keyframes downBtnBefore {
+  from {
+    height: 100%;
+    width: 100%;
+    border-radius: 0%;
+  }
+
+  to {
+    height: 0%;
+    width: 0%;
+    border-radius: 0%;
+  }
+}
+
+@keyframes downBtnAfter {
+  to {
+    height: 100%;
+    width: 100%;
+    border-radius: 0%;
+  }
+}
