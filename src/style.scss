@@ -34,8 +34,8 @@ body {
     padding: none;
     margin: none;
     width: 100%;
-    height: 5px;
-    background-color: rgb(82, 78, 78);
+    height: 2px;
+    background-color: snow;
     display: block;
     transition: all 100ms;
   }
@@ -44,26 +44,30 @@ body {
     position: absolute;
     transform: rotate(45deg);
     width: 90%;
-    height: 4px;
+    height: 3px;
   }
 
   .bar-Two.active {
     position: absolute;
     transform: rotate(-45deg);
     width: 90%;
-    height: 4px;
+    height: 3px;
   }
 }
 
 // navbar
 .navbar {
   width: 40%;
-  height: 1000px;
+  height: 100vh;
   display: flex;
   flex-direction: row;
   text-align: center;
   align-items: center;
   justify-content: start;
+  background-color: #31363c;
+  position: absolute;
+  right: 1px;
+  top: 0;
 
   .decoration-Bar {
     height: 100%;
@@ -76,23 +80,71 @@ body {
     justify-content: center;
 
     .cercle-One {
-      width: 50px;
-      height: 50px;
-      background-color: black;
+      width: 45px;
+      height: 45px;
+      background-color: #1d222a;
+      border: solid snow 1px;
       border-radius: 50%;
     }
 
     .line-El {
       height: 60%;
-      width: 5px;
-      background-color: black;
+      width: 1px;
+      background-color: #1d222a;
+      border: solid snow 1px;
+      border-top: none;
+      border-bottom: none;
     }
 
     .cercle-Two {
-      width: 50px;
-      height: 50px;
-      background-color: black;
+      width: 45px;
+      height: 45px;
+      background-color: #1d222a;
+      border: solid snow 1px;
       border-radius: 50%;
+    }
+  }
+
+  .nav-Links {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    align-items: center;
+
+    ul {
+      width: 100%;
+      height: 80%;
+      padding: none;
+      margin: none;
+      text-align: start;
+      align-items: start;
+      display: flex;
+      flex-direction: column;
+      list-style: none;
+      justify-content: center;
+
+      li {
+        padding: 1rem;
+        transition: all 100ms;
+
+        a {
+          font-size: 25px;
+          text-decoration: none;
+          font-family: $fontThree;
+          font-weight: 600;
+          color: white;
+          transition: all 440ms;
+        }
+
+        a:hover {
+          font-size: 25px;
+          text-decoration: none;
+          font-family: $fontThree;
+          font-weight: 600;
+          color: rgb(174, 202, 255);
+        }
+      }
     }
   }
 }
