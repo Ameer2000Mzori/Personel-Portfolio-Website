@@ -8,4 +8,49 @@ $fontFour: "Caveat", cursive;
 body {
   padding: 0;
   margin: 0;
+  position: relative;
+}
+
+// animation button
+.open-Close-Btn {
+  height: 40px;
+  width: 40px;
+  position: absolute;
+  right: 1rem;
+  top: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  justify-content: space-evenly;
+  cursor: pointer;
+  padding: none;
+  margin: none;
+  z-index: 10;
+
+  .bar-One,
+  .bar-Two {
+    position: relative;
+    padding: none;
+    margin: none;
+    width: 100%;
+    height: 5px;
+    background-color: rgb(82, 78, 78);
+    display: block;
+    transition: all 100ms;
+  }
+
+  .bar-One.active {
+    position: absolute;
+    transform: rotate(45deg);
+    width: 90%;
+    height: 4px;
+  }
+
+  .bar-Two.active {
+    position: absolute;
+    transform: rotate(-45deg);
+    width: 90%;
+    height: 4px;
+  }
 }

@@ -3,4 +3,48 @@
 body {
   padding: 0;
   margin: 0;
+  position: relative;
+}
+
+.open-Close-Btn {
+  height: 40px;
+  width: 40px;
+  position: absolute;
+  right: 1rem;
+  top: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  justify-content: space-evenly;
+  cursor: pointer;
+  padding: none;
+  margin: none;
+  z-index: 10;
+}
+
+.open-Close-Btn .bar-One,
+.open-Close-Btn .bar-Two {
+  position: relative;
+  padding: none;
+  margin: none;
+  width: 100%;
+  height: 5px;
+  background-color: rgb(82, 78, 78);
+  display: block;
+  transition: all 100ms;
+}
+
+.open-Close-Btn .bar-One.active {
+  position: absolute;
+  transform: rotate(45deg);
+  width: 90%;
+  height: 4px;
+}
+
+.open-Close-Btn .bar-Two.active {
+  position: absolute;
+  transform: rotate(-45deg);
+  width: 90%;
+  height: 4px;
 }
