@@ -4,6 +4,7 @@ body {
   padding: 0;
   margin: 0;
   position: relative;
+  background: linear-gradient(#232932, #2c3138, #232932);
 }
 
 .open-Close-Btn {
@@ -154,4 +155,36 @@ body {
   .navbar {
     width: 80%;
   }
+}
+
+.header {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+}
+
+.header .header-Top-Wrap {
+  display: flex;
+  height: 15%;
+  width: 95%;
+  text-align: center;
+  align-items: center;
+}
+
+.header .header-Top-Wrap .logo .logo-T-One {
+  font-family: "Caveat", cursive;
+  font-weight: 900;
+  font-size: 2.5rem;
+  outline: none;
+  text-decoration: none;
+  color: #fff;
+}
+
+.header .header-Top-Wrap .logo .logo-T-Two {
+  font-family: "Caveat", cursive;
+  font-weight: 100;
+  font-size: 2.5rem;
+  color: #29a587;
 }
