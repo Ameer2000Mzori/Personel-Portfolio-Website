@@ -487,13 +487,26 @@ body {
   z-index: -1;
 }
 
-@keyframes downBtnBefore {
-  from {
-    height: 100%;
-    width: 100%;
-    border-radius: 0%;
-  }
+.header .header-Top-Bottom {
+  height: 20%;
+  width: 90%;
+  position: relative;
+}
 
+.header .header-Top-Bottom .bottom-Text {
+  font-size: 15rem;
+  position: absolute;
+  top: -100%;
+  left: -15%;
+  z-index: -19;
+  font-family: "Caveat", cursive;
+  color: #31383b;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+@keyframes downBtnBefore {
   to {
     height: 0%;
     width: 0%;
