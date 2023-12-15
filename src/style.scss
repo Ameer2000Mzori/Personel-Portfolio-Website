@@ -40,7 +40,7 @@ body {
     height: 2px;
     background-color: snow;
     display: block;
-    transition: all 100ms;
+    transition: all 300ms;
   }
 
   .bar-One.active {
@@ -186,15 +186,15 @@ body {
   .header-Top-Wrap {
     display: flex;
     height: 15%;
-    width: 95%;
+    width: 80%;
     text-align: center;
     align-items: center;
 
     .logo {
       .logo-T-One {
-        font-family: $fontFour;
+        font-family: $fontTwo;
         font-weight: 900;
-        font-size: 2.5rem;
+        font-size: 3.5rem;
         outline: none;
         text-decoration: none;
         color: #fff;
@@ -203,16 +203,15 @@ body {
       .logo-T-Two {
         font-family: $fontFour;
         font-weight: 100;
-        font-size: 2.5rem;
+        font-size: 3.5rem;
         color: #29a587;
       }
     }
   }
 
   .header-Top-Mid {
-    margin-top: 5rem;
-    width: 95%;
-    height: 60%;
+    width: 75%;
+    height: 100%;
     display: flex;
     flex-direction: row;
     text-align: center;
@@ -279,10 +278,35 @@ body {
 
           .title-Span-One {
             color: #29a587;
+            font-family: "Rowdies", sans-serif;
           }
 
           .title-Span-Two {
+            font-family: "Rowdies", sans-serif;
             color: white;
+          }
+        }
+
+        .title-Name {
+          display: flex;
+          gap: 15px;
+
+          .first-Name,
+          .Second-Name {
+            font-size: 6rem;
+            color: #fff;
+            text-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.3);
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            text-decoration: none;
+            outline: none;
+            font-weight: 900;
+            font-family: "Rowdies", sans-serif;
+          }
+
+          .Second-Name {
+            color: #29a587;
           }
         }
       }
