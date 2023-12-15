@@ -171,6 +171,12 @@ body {
   width: 80%;
   text-align: center;
   align-items: center;
+  text-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.3);
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  outline: none;
 }
 
 .header .header-Top-Wrap .logo .logo-T-One {
@@ -258,6 +264,12 @@ body {
   font-weight: 900;
   display: flex;
   gap: 10px;
+  text-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.3);
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  outline: none;
 }
 
 .header .header-Top-Mid .mid-banner .information-Wrap .title-Text .title-Span-One {
@@ -291,4 +303,42 @@ body {
 
 .header .header-Top-Mid .mid-banner .information-Wrap .title-Name .Second-Name {
   color: #29a587;
+}
+
+.header .header-Top-Mid .mid-banner .information-Wrap .text-Two {
+  font-family: "Caveat", cursive;
+  font-size: 2rem;
+  color: white;
+  text-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.3);
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  outline: none;
+}
+
+.header .header-Top-Mid .mid-banner .information-Wrap .text-Par {
+  font-family: "Caveat", cursive;
+  font-size: 1.5rem;
+  color: rgb(156, 153, 153);
+}
+
+.header .header-Top-Mid .mid-banner .information-Wrap .social-Buttons {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  align-items: center;
+}
+
+.header .header-Top-Mid .mid-banner .information-Wrap .social-Buttons a i {
+  font-size: 2rem;
+  color: white;
+  margin: 1rem;
+  transition: all 150ms;
+}
+
+.header .header-Top-Mid .mid-banner .information-Wrap .social-Buttons a i:hover {
+  font-size: 2rem;
+  color: rgb(167, 165, 165);
+  margin: 1rem;
 }

@@ -189,6 +189,12 @@ body {
     width: 80%;
     text-align: center;
     align-items: center;
+    text-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.3);
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
 
     .logo {
       .logo-T-One {
@@ -275,6 +281,12 @@ body {
           font-weight: 900;
           display: flex;
           gap: 10px;
+          text-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.3);
+          margin: 0;
+          padding: 0;
+          box-sizing: border-box;
+          text-decoration: none;
+          outline: none;
 
           .title-Span-One {
             color: #29a587;
@@ -307,6 +319,46 @@ body {
 
           .Second-Name {
             color: #29a587;
+          }
+        }
+
+        .text-Two {
+          font-family: $fontFour;
+          font-size: 2rem;
+          color: white;
+          text-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.3);
+          margin: 0;
+          padding: 0;
+          box-sizing: border-box;
+          text-decoration: none;
+          outline: none;
+        }
+
+        .text-Par {
+          font-family: $fontFour;
+          font-size: 1.5rem;
+          color: rgb(156, 153, 153);
+        }
+
+        .social-Buttons {
+          display: flex;
+          flex-direction: row;
+          text-align: center;
+          align-items: center;
+
+          a {
+            i {
+              font-size: 2rem;
+              color: white;
+              margin: 1rem;
+              transition: all 150ms;
+            }
+
+            i:hover {
+              font-size: 2rem;
+              color: rgb(167, 165, 165);
+              margin: 1rem;
+            }
           }
         }
       }
