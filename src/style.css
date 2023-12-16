@@ -945,7 +945,7 @@ body {
   align-items: center;
   justify-content: center;
   width: 100%;
-  height: clamp(500px, 100%, 1000px);
+  height: clamp(500px, 100%, 5000px);
   margin-top: 5rem;
 }
 
@@ -1109,13 +1109,58 @@ body {
   color: #29a587;
 }
 
-.projects .left-Projects-Wrap .Projects-Wrap .project-Btn-Wrap .see-Project-Wrap:hover .see-Code-Wrap-A a,
-.projects .left-Projects-Wrap .Projects-Wrap .project-Btn-Wrap .see-Code-Wrap:hover .see-Code-Wrap-A a {
+.projects .left-Projects-Wrap .Projects-Wrap .project-Btn-Wrap .see-Project-Wrap:hover .see-Code-Wrap-A {
+  color: #fff;
   color: #29a587;
 }
 
-.projects .left-Projects-Wrap .Projects-Wrap .project-Btn-Wrap .see-Project-Wrap:hover #see-Code-Wrap-I,
-.projects .left-Projects-Wrap .Projects-Wrap .project-Btn-Wrap .see-Code-Wrap:hover #see-Code-Wrap-I {
-  margin-left: 5px;
+.projects .left-Projects-Wrap .Projects-Wrap .project-Btn-Wrap .see-Project-Wrap:hover #see-Code-Wrap-I {
+  transition: all 200ms;
   color: #fff;
+  margin-left: 15px;
+}
+
+.projects .left-Projects-Wrap .Projects-Wrap .project-Btn-Wrap .see-Code-Wrap:hover .see-Code-Wrap-A {
+  color: #fff;
+  color: #29a587;
+}
+
+.projects .left-Projects-Wrap .Projects-Wrap .project-Btn-Wrap .see-Code-Wrap:hover #see-Code-Wrap-I {
+  transition: all 200ms;
+  color: #fff;
+  margin-left: 15px;
+}
+
+.projects .left-Projects-Wrap .view-More-Btn-Wrap {
+  width: 100%;
+  height: 100px;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+.projects .left-Projects-Wrap .view-More-Btn-Wrap .view-More-Btn {
+  cursor: pointer;
+  margin: 1rem;
+  padding: 15px 60px;
+  background-color: transparent;
+  color: #29a587;
+  border: solid #29a587 4px;
+  border-radius: 5rem;
+  font-family: "Rowdies", sans-serif;
+  font-size: 1rem;
+  transition: all 150ms;
+}
+
+.projects .left-Projects-Wrap .view-More-Btn-Wrap .view-More-Btn:hover {
+  background-color: #29a587;
+  color: #1d222a;
+  transform: scale(1.1);
+}
+
+.projects .left-Projects-Wrap .view-More-Btn-Wrap .view-More-Btn:active {
+  background-color: #1d222a;
+  color: #29a587;
+  transform: scale(0.9);
 }
