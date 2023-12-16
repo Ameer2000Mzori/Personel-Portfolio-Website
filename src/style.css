@@ -1200,3 +1200,9 @@ body {
   border: solid snow 1px;
   border-radius: 50%;
 }
+
+@media screen and (max-width: 768px) {
+  .navbar {
+    width: 80%;
+  }
+}
