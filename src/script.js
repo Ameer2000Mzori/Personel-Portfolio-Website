@@ -89,6 +89,23 @@ getData(API_KEY);
 // our functions
 var listCards = function () {
     // creating our elements dynamiclly :
+    var projectCard = document.createElement("div");
+    projectCard.classList.add("project-Card");
+    var projectImgWrap = document.createElement("div");
+    projectImgWrap.classList.add("project-Img-Wrap");
+    projectCard.appendChild(projectImgWrap);
+    var projectImg = document.createElement("img");
+    projectImg.classList.add("project-Img");
+    projectImgWrap.appendChild(projectImg);
+    var projectPLang = document.createElement("p");
+    projectPLang.classList.add("project-P-Lang");
+    projectCard.appendChild(projectPLang);
+    var projectNameTitle = document.createElement("h3");
+    projectNameTitle.classList.add("project-Name-Title");
+    projectCard.appendChild(projectNameTitle);
+    var projectPText = document.createElement("p");
+    projectPText.classList.add("project-P-Text");
+    projectCard.appendChild(projectPText);
 };
 // our event lisnters
 //

@@ -49,6 +49,28 @@ getData(API_KEY);
 // our functions
 const listCards = () => {
   // creating our elements dynamiclly :
+  const projectCard = document.createElement("div");
+  projectCard.classList.add("project-Card");
+
+  const projectImgWrap = document.createElement("div");
+  projectImgWrap.classList.add("project-Img-Wrap");
+  projectCard.appendChild(projectImgWrap);
+
+  const projectImg = document.createElement("img");
+  projectImg.classList.add("project-Img");
+  projectImgWrap.appendChild(projectImg);
+
+  const projectPLang = document.createElement("p");
+  projectPLang.classList.add("project-P-Lang");
+  projectCard.appendChild(projectPLang);
+
+  const projectNameTitle = document.createElement("h3");
+  projectNameTitle.classList.add("project-Name-Title");
+  projectCard.appendChild(projectNameTitle);
+
+  const projectPText = document.createElement("p");
+  projectPText.classList.add("project-P-Text");
+  projectCard.appendChild(projectPText);
 };
 
 // our event lisnters
