@@ -945,6 +945,11 @@ body {
   align-items: center;
   justify-content: center;
   width: 100%;
-  height: clamp(500px, 100%, 1000px);
+  height: 100vh;
   margin-top: 5rem;
+}
+
+.projects .left-Projects-Wrap {
+  width: 70%;
+  height: 100%;
 }
