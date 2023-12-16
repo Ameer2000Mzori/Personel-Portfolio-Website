@@ -755,17 +755,17 @@ body {
   align-items: center;
   justify-content: center;
   width: 100%;
-  height: 100vh;
+  height: clamp(500px, 100%, 1000px);
   margin-top: 5rem;
 
   .left-Deco-Skills {
     width: 10%;
-    height: 100%;
     display: flex;
     flex-direction: column;
     text-align: center;
     align-items: center;
     justify-content: center;
+    height: 500px;
 
     .skills-Cercle-One {
       width: 35px;
@@ -944,6 +944,32 @@ body {
 
           .skills-Range-Fill.Tools {
             width: 50%;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .skills {
+    .left-Deco-Skills {
+      height: 2050px;
+    }
+
+    .right-Skill-Skills {
+      .titles-Skills {
+        .skills-Text-One {
+          font-size: 2rem;
+        }
+
+        .skills-Text-Two {
+          .text-Skills-2-1 {
+            font-size: 1rem;
+          }
+
+          .text-Skills-2-2 {
+            font-size: 2rem;
           }
         }
       }
