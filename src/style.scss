@@ -891,6 +891,41 @@ body {
           font-family: $fontFour;
         }
       }
+
+      .skills-Range-Wrap {
+        height: 25%;
+        width: 100%;
+        text-align: center;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        .skills-Range {
+          width: 90%;
+          height: 3px;
+          background-color: #1d222a;
+          border-radius: 1rem;
+
+          .skills-Range-Fill {
+            background-color: #29a587;
+            width: 90%;
+            position: relative;
+            height: 100%;
+
+            .skills-Range-Circile {
+              height: 30px;
+              width: 30px;
+              border-radius: 50%;
+              background-color: #1d222a;
+              border: solid #29a587 2px;
+              position: absolute;
+              right: 0;
+              bottom: -500%;
+            }
+          }
+        }
+      }
     }
   }
 }
