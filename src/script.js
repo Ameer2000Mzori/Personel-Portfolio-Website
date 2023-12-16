@@ -159,4 +159,9 @@ var listCards = function (data) {
         ProjectsWrap.appendChild(projectCard);
     });
 };
+// our view more projects function
+var viewMoreProjects = function () {
+    console.log("view more");
+};
 // our event lisnters
+viewMoreBtn.addEventListener("click", viewMoreProjects);

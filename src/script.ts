@@ -136,4 +136,10 @@ const listCards = (data) => {
   });
 };
 
+// our view more projects function
+const viewMoreProjects = () => {
+  console.log("view more");
+};
+
 // our event lisnters
+viewMoreBtn.addEventListener("click", viewMoreProjects);
