@@ -56,6 +56,7 @@ openCloseBtn.addEventListener("click", openNav);
 // selecting elements
 var viewMoreBtn = document.getElementsByClassName("view-More-Btn")[0];
 var ProjectsWrap = document.getElementsByClassName("Projects-Wrap")[0];
+var ProjectsDecorationBar = document.getElementsByClassName("Projects-Decoration-Bar")[0];
 // gelobal varibales
 var countProjects = 6;
 // API KEY(S)
@@ -158,13 +159,19 @@ var listCards = function (data) {
 // our view more projects function
 var viewMoreProjects = function () {
     if (countProjects == 6) {
+        viewMoreBtn.textContent = "VIEW LESS";
         ProjectsWrap.innerHTML = "";
+        ProjectsDecorationBar.style.height = "3000px";
+        ProjectsWrap.classList.add("active");
         countProjects = 12;
         var newData12 = "https://api.github.com/users/ameer2000mzori/repos?per_page=".concat(countProjects, "&sort=created");
         getData(newData12);
     }
     else {
+        viewMoreBtn.textContent = "VIEW MORE";
         ProjectsWrap.innerHTML = "";
+        ProjectsDecorationBar.style.height = "1500px";
+        ProjectsWrap.classList.remove("active");
         countProjects = 6;
         var newData6 = "https://api.github.com/users/ameer2000mzori/repos?per_page=".concat(countProjects, "&sort=created");
         getData(newData6);

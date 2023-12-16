@@ -27,6 +27,9 @@ openCloseBtn.addEventListener("click", openNav);
 // selecting elements
 const viewMoreBtn = document.getElementsByClassName("view-More-Btn")[0];
 const ProjectsWrap = document.getElementsByClassName("Projects-Wrap")[0];
+const ProjectsDecorationBar: any = document.getElementsByClassName(
+  "Projects-Decoration-Bar"
+)[0];
 
 // gelobal varibales
 let countProjects = 6;
@@ -135,12 +138,19 @@ const listCards = (data) => {
 // our view more projects function
 const viewMoreProjects = () => {
   if (countProjects == 6) {
+    viewMoreBtn.textContent = `VIEW LESS`;
     ProjectsWrap.innerHTML = ``;
+    ProjectsDecorationBar.style.height = "3000px";
+    ProjectsWrap.classList.add("active");
+
     countProjects = 12;
     let newData12 = `https://api.github.com/users/ameer2000mzori/repos?per_page=${countProjects}&sort=created`;
     getData(newData12);
   } else {
+    viewMoreBtn.textContent = `VIEW MORE`;
     ProjectsWrap.innerHTML = ``;
+    ProjectsDecorationBar.style.height = "1500px";
+    ProjectsWrap.classList.remove("active");
     countProjects = 6;
     let newData6 = `https://api.github.com/users/ameer2000mzori/repos?per_page=${countProjects}&sort=created`;
     getData(newData6);
