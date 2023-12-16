@@ -953,3 +953,48 @@ body {
   width: 70%;
   height: 100%;
 }
+
+.projects .left-Projects-Wrap .projects-Titles {
+  width: 100%;
+  height: 20%;
+  text-align: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.projects .left-Projects-Wrap .projects-Titles .projects-Text-1 {
+  font-family: "Rowdies", sans-serif;
+  font-size: 6rem;
+  color: #fff;
+  padding: 0;
+  margin: 0;
+}
+
+.projects .left-Projects-Wrap .projects-Titles .projects-Text-2 {
+  text-align: center;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+  gap: 5px;
+}
+
+.projects .left-Projects-Wrap .projects-Titles .projects-Text-2 .P-T-1-2 {
+  font-family: "Rowdies", sans-serif;
+  color: white;
+  font-size: 2rem;
+  padding: 0;
+  margin: 0;
+}
+
+.projects .left-Projects-Wrap .projects-Titles .projects-Text-2 .P-T-2-2 {
+  font-family: "Caveat", cursive;
+  color: #29a587;
+  font-size: 3rem;
+  padding: 0;
+  margin: 0;
+}
