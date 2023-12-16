@@ -854,12 +854,13 @@ body {
       flex-wrap: wrap;
       text-align: center;
       align-items: start;
-      justify-content: flex-start;
+      justify-content: center;
       margin-top: 2rem;
+      gap: 5rem;
 
       .skills-Card {
-        width: 300px;
-        height: 250px;
+        width: 500px;
+        height: 300px;
 
         .name-Lang-Num {
           display: flex;
@@ -923,6 +924,26 @@ body {
               right: 0;
               bottom: -500%;
             }
+          }
+
+          .skills-Range-Fill.Css {
+            width: 85%;
+          }
+
+          .skills-Range-Fill.Scss {
+            width: 60%;
+          }
+
+          .skills-Range-Fill.JavaScript {
+            width: 55%;
+          }
+
+          .skills-Range-Fill.TypeScript {
+            width: 35%;
+          }
+
+          .skills-Range-Fill.Tools {
+            width: 50%;
           }
         }
       }

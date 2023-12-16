@@ -810,13 +810,14 @@ body {
   flex-wrap: wrap;
   text-align: center;
   align-items: start;
-  justify-content: flex-start;
+  justify-content: center;
   margin-top: 2rem;
+  gap: 5rem;
 }
 
 .skills .right-Skill-Skills .skills-Cards-Wrap .skills-Card {
-  width: 300px;
-  height: 250px;
+  width: 500px;
+  height: 300px;
 }
 
 .skills .right-Skill-Skills .skills-Cards-Wrap .skills-Card .name-Lang-Num {
@@ -882,4 +883,24 @@ body {
   position: absolute;
   right: 0;
   bottom: -500%;
+}
+
+.skills .right-Skill-Skills .skills-Cards-Wrap .skills-Range-Wrap .skills-Range .skills-Range-Fill.Css {
+  width: 85%;
+}
+
+.skills .right-Skill-Skills .skills-Cards-Wrap .skills-Range-Wrap .skills-Range .skills-Range-Fill.Scss {
+  width: 60%;
+}
+
+.skills .right-Skill-Skills .skills-Cards-Wrap .skills-Range-Wrap .skills-Range .skills-Range-Fill.JavaScript {
+  width: 55%;
+}
+
+.skills .right-Skill-Skills .skills-Cards-Wrap .skills-Range-Wrap .skills-Range .skills-Range-Fill.TypeScript {
+  width: 35%;
+}
+
+.skills .right-Skill-Skills .skills-Cards-Wrap .skills-Range-Wrap .skills-Range .skills-Range-Fill.Tools {
+  width: 50%;
 }
