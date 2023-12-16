@@ -976,3 +976,24 @@ body {
     }
   }
 }
+
+@media screen and (max-width: 768px) {
+  .skills {
+    .left-Deco-Skills {
+      height: 2300px;
+
+      .skills-Line-El {
+        height: 100%;
+      }
+
+      .right-Skill-Skills {
+        .skills-Cards-Wrap {
+          .skills-Card {
+            width: 400px;
+            height: 270px;
+          }
+        }
+      }
+    }
+  }
+}

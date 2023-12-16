@@ -922,3 +922,18 @@ body {
     font-size: 2rem;
   }
 }
+
+@media screen and (max-width: 768px) {
+  .skills .left-Deco-Skills {
+    height: 2300px;
+  }
+
+  .skills .left-Deco-Skills .skills-Line-El {
+    height: 100%;
+  }
+
+  .skills .left-Deco-Skills .right-Skill-Skills .skills-Cards-Wrap .skills-Card {
+    width: 400px;
+    height: 270px;
+  }
+}
