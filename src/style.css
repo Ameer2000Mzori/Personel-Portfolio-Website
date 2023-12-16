@@ -701,3 +701,55 @@ body {
     left: 0%;
   }
 }
+
+.skills {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+}
+
+.skills .left-Deco-Skills {
+  width: 10%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.skills .left-Deco-Skills .skills-Cercle-One {
+  width: 35px;
+  height: 35px;
+  background-color: #1d222a;
+  border: solid snow 1px;
+  border-radius: 50%;
+}
+
+.skills .left-Deco-Skills .skills-Line-El {
+  height: 85%;
+  width: 0;
+  background-color: #1d222a;
+  border: solid snow 1px;
+  border-top: none;
+  border-bottom: none;
+}
+
+.skills .left-Deco-Skills .skills-Cercle-Two {
+  width: 35px;
+  height: 35px;
+  background-color: #1d222a;
+  border: solid snow 1px;
+  border-radius: 50%;
+}
+
+.skills .right-Skill-Skills {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  height: 100%;
+}
