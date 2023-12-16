@@ -32,16 +32,16 @@ const ProjectsWrap = document.getElementsByClassName("Projects-Wrap")[0];
 let countProjects = 6;
 
 // API KEY(S)
-let API_KEY = `https://api.github.com/users/ameer2000mzori/repos?per_page=${countProjects}`;
+let API_KEY = `https://api.github.com/users/ameer2000mzori/repos?per_page=${countProjects}&sort=created`;
 
 // API FETCH DATA
 async function getData(API_KEY) {
   try {
     const resposne = await fetch(API_KEY);
     let data = await resposne.json();
-    console.log(data);
 
-    // listCards();
+    listCards(data);
+    console.log(data);
   } catch (error) {
     console.log("we got an error:", error);
   }
@@ -49,70 +49,86 @@ async function getData(API_KEY) {
 getData(API_KEY);
 
 // our functions
-const listCards = () => {
-  // let { description, homepage, html_url, name, topics } = data[0];
-  // console.log(description, homepage, html_url, name, topics);
+const listCards = (data) => {
+  // our for each func / loop :
+  data.forEach((info) => {
+    console.log(info);
+    let { description, homepage, html_url, name, topics } = info;
+    console.log(description, homepage, html_url, name, topics);
+    // creating our elements dynamiclly :
+    const projectCard = document.createElement("div");
+    projectCard.classList.add("project-Card");
 
-  // creating our elements dynamiclly :
-  const projectCard = document.createElement("div");
-  projectCard.classList.add("project-Card");
+    const projectImgWrap = document.createElement("div");
+    projectImgWrap.classList.add("project-Img-Wrap");
+    projectCard.appendChild(projectImgWrap);
 
-  const projectImgWrap = document.createElement("div");
-  projectImgWrap.classList.add("project-Img-Wrap");
-  projectCard.appendChild(projectImgWrap);
+    const projectImg = document.createElement("img");
+    projectImg.classList.add("project-Img");
+    projectImg.src = `https://raw.githubusercontent.com/Ameer2000Mzori/${name}/main/sample/1.png`;
+    projectImgWrap.appendChild(projectImg);
 
-  const projectImg = document.createElement("img");
-  projectImg.classList.add("project-Img");
-  projectImgWrap.appendChild(projectImg);
+    const projectPLang = document.createElement("p");
+    projectPLang.classList.add("project-P-Lang");
 
-  const projectPLang = document.createElement("p");
-  projectPLang.classList.add("project-P-Lang");
-  projectCard.appendChild(projectPLang);
+    let topicsCount = 0;
 
-  const projectNameTitle = document.createElement("h3");
-  projectNameTitle.classList.add("project-Name-Title");
-  projectCard.appendChild(projectNameTitle);
+    for (let topic of topics) {
+      topicsCount++;
+      console.log(topicsCount);
 
-  const projectPText = document.createElement("p");
-  projectPText.classList.add("project-P-Text");
-  projectCard.appendChild(projectPText);
+      if (topicsCount < topics.length) {
+        projectPLang.textContent += topic + `, `;
+      } else {
+        projectPLang.textContent += topic + `.`;
+      }
+    }
 
-  const projectBtnWrap = document.createElement("div");
-  projectBtnWrap.classList.add("project-Btn-Wrap");
-  projectCard.appendChild(projectBtnWrap);
+    projectCard.appendChild(projectPLang);
 
-  const seeProjectWrap = document.createElement("div");
-  seeProjectWrap.classList.add("see-Project-Wrap");
-  projectBtnWrap.appendChild(seeProjectWrap);
+    const projectNameTitle = document.createElement("h3");
+    projectNameTitle.classList.add("project-Name-Title");
+    projectCard.appendChild(projectNameTitle);
 
-  const seeCodeWrapA = document.createElement("a");
-  seeCodeWrapA.classList.add("see-Code-Wrap-A");
-  seeCodeWrapA.textContent = `SEE PROJECT`;
-  seeProjectWrap.appendChild(seeCodeWrapA);
+    const projectPText = document.createElement("p");
+    projectPText.classList.add("project-P-Text");
+    projectCard.appendChild(projectPText);
 
-  const seeCodeWrapI = document.createElement("i");
-  seeCodeWrapI.id = "see-Code-Wrap-I";
-  seeCodeWrapI.classList.add("fa-solid", "fa-arrow-right");
-  seeProjectWrap.appendChild(seeCodeWrapI);
+    const projectBtnWrap = document.createElement("div");
+    projectBtnWrap.classList.add("project-Btn-Wrap");
+    projectCard.appendChild(projectBtnWrap);
 
-  const seeCodeWrap = document.createElement("div");
-  seeCodeWrap.classList.add("see-Code-Wrap");
-  projectBtnWrap.appendChild(seeCodeWrap);
+    const seeProjectWrap = document.createElement("div");
+    seeProjectWrap.classList.add("see-Project-Wrap");
+    projectBtnWrap.appendChild(seeProjectWrap);
 
-  const seeCodeWrapAA = document.createElement("a");
-  seeCodeWrapAA.classList.add("see-Code-Wrap-A");
-  seeCodeWrapAA.textContent = `SEE CODE`;
-  seeCodeWrap.appendChild(seeCodeWrapAA);
+    const seeCodeWrapA = document.createElement("a");
+    seeCodeWrapA.classList.add("see-Code-Wrap-A");
+    seeCodeWrapA.textContent = `SEE PROJECT`;
+    seeProjectWrap.appendChild(seeCodeWrapA);
 
-  const seeCodeWrapII = document.createElement("i");
-  seeCodeWrapII.id = "see-Code-Wrap-I";
-  seeCodeWrapII.classList.add("fa-solid", "fa-arrow-right");
-  seeCodeWrap.appendChild(seeCodeWrapII);
+    const seeCodeWrapI = document.createElement("i");
+    seeCodeWrapI.id = "see-Code-Wrap-I";
+    seeCodeWrapI.classList.add("fa-solid", "fa-arrow-right");
+    seeProjectWrap.appendChild(seeCodeWrapI);
 
-  ProjectsWrap.appendChild(projectCard);
+    const seeCodeWrap = document.createElement("div");
+    seeCodeWrap.classList.add("see-Code-Wrap");
+    projectBtnWrap.appendChild(seeCodeWrap);
+
+    const seeCodeWrapAA = document.createElement("a");
+    seeCodeWrapAA.classList.add("see-Code-Wrap-A");
+    seeCodeWrapAA.textContent = `SEE CODE`;
+    seeCodeWrap.appendChild(seeCodeWrapAA);
+
+    const seeCodeWrapII = document.createElement("i");
+    seeCodeWrapII.id = "see-Code-Wrap-I";
+    seeCodeWrapII.classList.add("fa-solid", "fa-arrow-right");
+    seeCodeWrap.appendChild(seeCodeWrapII);
+
+    ProjectsWrap.appendChild(projectCard);
+  });
 };
-
-listCards();
 
 // our event lisnters
 

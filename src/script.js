@@ -59,7 +59,7 @@ var ProjectsWrap = document.getElementsByClassName("Projects-Wrap")[0];
 // gelobal varibales
 var countProjects = 6;
 // API KEY(S)
-var API_KEY = "https://api.github.com/users/ameer2000mzori/repos?per_page=".concat(countProjects);
+var API_KEY = "https://api.github.com/users/ameer2000mzori/repos?per_page=".concat(countProjects, "&sort=created");
 // API FETCH DATA
 function getData(API_KEY) {
     return __awaiter(this, void 0, void 0, function () {
@@ -74,6 +74,7 @@ function getData(API_KEY) {
                     return [4 /*yield*/, resposne.json()];
                 case 2:
                     data = _a.sent();
+                    listCards(data);
                     console.log(data);
                     return [3 /*break*/, 4];
                 case 3:
@@ -87,55 +88,71 @@ function getData(API_KEY) {
 }
 getData(API_KEY);
 // our functions
-var listCards = function () {
-    // let { description, homepage, html_url, name, topics } = data[0];
-    // console.log(description, homepage, html_url, name, topics);
-    // creating our elements dynamiclly :
-    var projectCard = document.createElement("div");
-    projectCard.classList.add("project-Card");
-    var projectImgWrap = document.createElement("div");
-    projectImgWrap.classList.add("project-Img-Wrap");
-    projectCard.appendChild(projectImgWrap);
-    var projectImg = document.createElement("img");
-    projectImg.classList.add("project-Img");
-    projectImgWrap.appendChild(projectImg);
-    var projectPLang = document.createElement("p");
-    projectPLang.classList.add("project-P-Lang");
-    projectCard.appendChild(projectPLang);
-    var projectNameTitle = document.createElement("h3");
-    projectNameTitle.classList.add("project-Name-Title");
-    projectCard.appendChild(projectNameTitle);
-    var projectPText = document.createElement("p");
-    projectPText.classList.add("project-P-Text");
-    projectCard.appendChild(projectPText);
-    var projectBtnWrap = document.createElement("div");
-    projectBtnWrap.classList.add("project-Btn-Wrap");
-    projectCard.appendChild(projectBtnWrap);
-    var seeProjectWrap = document.createElement("div");
-    seeProjectWrap.classList.add("see-Project-Wrap");
-    projectBtnWrap.appendChild(seeProjectWrap);
-    var seeCodeWrapA = document.createElement("a");
-    seeCodeWrapA.classList.add("see-Code-Wrap-A");
-    seeCodeWrapA.textContent = "SEE PROJECT";
-    seeProjectWrap.appendChild(seeCodeWrapA);
-    var seeCodeWrapI = document.createElement("i");
-    seeCodeWrapI.id = "see-Code-Wrap-I";
-    seeCodeWrapI.classList.add("fa-solid", "fa-arrow-right");
-    seeProjectWrap.appendChild(seeCodeWrapI);
-    var seeCodeWrap = document.createElement("div");
-    seeCodeWrap.classList.add("see-Code-Wrap");
-    projectBtnWrap.appendChild(seeCodeWrap);
-    var seeCodeWrapAA = document.createElement("a");
-    seeCodeWrapAA.classList.add("see-Code-Wrap-A");
-    seeCodeWrapAA.textContent = "SEE CODE";
-    seeCodeWrap.appendChild(seeCodeWrapAA);
-    var seeCodeWrapII = document.createElement("i");
-    seeCodeWrapII.id = "see-Code-Wrap-I";
-    seeCodeWrapII.classList.add("fa-solid", "fa-arrow-right");
-    seeCodeWrap.appendChild(seeCodeWrapII);
-    ProjectsWrap.appendChild(projectCard);
+var listCards = function (data) {
+    // our for each func / loop :
+    data.forEach(function (info) {
+        console.log(info);
+        var description = info.description, homepage = info.homepage, html_url = info.html_url, name = info.name, topics = info.topics;
+        console.log(description, homepage, html_url, name, topics);
+        // creating our elements dynamiclly :
+        var projectCard = document.createElement("div");
+        projectCard.classList.add("project-Card");
+        var projectImgWrap = document.createElement("div");
+        projectImgWrap.classList.add("project-Img-Wrap");
+        projectCard.appendChild(projectImgWrap);
+        var projectImg = document.createElement("img");
+        projectImg.classList.add("project-Img");
+        projectImg.src = "https://raw.githubusercontent.com/Ameer2000Mzori/".concat(name, "/main/sample/1.png");
+        projectImgWrap.appendChild(projectImg);
+        var projectPLang = document.createElement("p");
+        projectPLang.classList.add("project-P-Lang");
+        var topicsCount = 0;
+        for (var _i = 0, topics_1 = topics; _i < topics_1.length; _i++) {
+            var topic = topics_1[_i];
+            topicsCount++;
+            console.log(topicsCount);
+            if (topicsCount < topics.length) {
+                projectPLang.textContent += topic + ", ";
+            }
+            else {
+                projectPLang.textContent += topic + ".";
+            }
+        }
+        projectCard.appendChild(projectPLang);
+        var projectNameTitle = document.createElement("h3");
+        projectNameTitle.classList.add("project-Name-Title");
+        projectCard.appendChild(projectNameTitle);
+        var projectPText = document.createElement("p");
+        projectPText.classList.add("project-P-Text");
+        projectCard.appendChild(projectPText);
+        var projectBtnWrap = document.createElement("div");
+        projectBtnWrap.classList.add("project-Btn-Wrap");
+        projectCard.appendChild(projectBtnWrap);
+        var seeProjectWrap = document.createElement("div");
+        seeProjectWrap.classList.add("see-Project-Wrap");
+        projectBtnWrap.appendChild(seeProjectWrap);
+        var seeCodeWrapA = document.createElement("a");
+        seeCodeWrapA.classList.add("see-Code-Wrap-A");
+        seeCodeWrapA.textContent = "SEE PROJECT";
+        seeProjectWrap.appendChild(seeCodeWrapA);
+        var seeCodeWrapI = document.createElement("i");
+        seeCodeWrapI.id = "see-Code-Wrap-I";
+        seeCodeWrapI.classList.add("fa-solid", "fa-arrow-right");
+        seeProjectWrap.appendChild(seeCodeWrapI);
+        var seeCodeWrap = document.createElement("div");
+        seeCodeWrap.classList.add("see-Code-Wrap");
+        projectBtnWrap.appendChild(seeCodeWrap);
+        var seeCodeWrapAA = document.createElement("a");
+        seeCodeWrapAA.classList.add("see-Code-Wrap-A");
+        seeCodeWrapAA.textContent = "SEE CODE";
+        seeCodeWrap.appendChild(seeCodeWrapAA);
+        var seeCodeWrapII = document.createElement("i");
+        seeCodeWrapII.id = "see-Code-Wrap-I";
+        seeCodeWrapII.classList.add("fa-solid", "fa-arrow-right");
+        seeCodeWrap.appendChild(seeCodeWrapII);
+        ProjectsWrap.appendChild(projectCard);
+    });
 };
-listCards();
 // our event lisnters
 //
 //

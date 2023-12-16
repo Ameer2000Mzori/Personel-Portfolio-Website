@@ -1,5 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Kenia&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
-
 body {
   padding: 0;
   margin: 0;
@@ -23,7 +22,6 @@ body {
   z-index: 111;
   position: fixed;
 }
-
 .open-Close-Btn .bar-One,
 .open-Close-Btn .bar-Two {
   position: relative;
@@ -35,14 +33,12 @@ body {
   display: block;
   transition: all 300ms;
 }
-
 .open-Close-Btn .bar-One.active {
   position: absolute;
   transform: rotate(45deg);
   width: 90%;
   height: 3px;
 }
-
 .open-Close-Btn .bar-Two.active {
   position: absolute;
   transform: rotate(-45deg);
@@ -65,7 +61,6 @@ body {
   z-index: 100;
   transition: all 1000ms ease-in-out;
 }
-
 .navbar .decoration-Bar {
   height: 100%;
   width: 25%;
@@ -76,7 +71,6 @@ body {
   flex-direction: column;
   justify-content: center;
 }
-
 .navbar .decoration-Bar .cercle-One {
   width: 45px;
   height: 45px;
@@ -84,7 +78,6 @@ body {
   border: solid snow 1px;
   border-radius: 50%;
 }
-
 .navbar .decoration-Bar .line-El {
   height: 60%;
   width: 1px;
@@ -93,7 +86,6 @@ body {
   border-top: none;
   border-bottom: none;
 }
-
 .navbar .decoration-Bar .cercle-Two {
   width: 45px;
   height: 45px;
@@ -101,7 +93,6 @@ body {
   border: solid snow 1px;
   border-radius: 50%;
 }
-
 .navbar .nav-Links {
   display: flex;
   width: 100%;
@@ -109,7 +100,6 @@ body {
   text-align: center;
   align-items: center;
 }
-
 .navbar .nav-Links ul {
   width: 100%;
   height: 80%;
@@ -122,12 +112,10 @@ body {
   list-style: none;
   justify-content: center;
 }
-
 .navbar .nav-Links ul li {
   padding: 1rem;
   transition: all 100ms;
 }
-
 .navbar .nav-Links ul li a {
   font-size: 25px;
   text-decoration: none;
@@ -136,7 +124,6 @@ body {
   color: white;
   transition: all 440ms;
 }
-
 .navbar .nav-Links ul li a:hover {
   font-size: 25px;
   text-decoration: none;
@@ -157,7 +144,6 @@ body {
     width: 80%;
   }
 }
-
 .header {
   height: 100vh;
   display: flex;
@@ -165,7 +151,6 @@ body {
   text-align: center;
   align-items: center;
 }
-
 .header .header-Top-Wrap {
   display: flex;
   height: 15%;
@@ -179,7 +164,6 @@ body {
   text-decoration: none;
   outline: none;
 }
-
 .header .header-Top-Wrap .logo .logo-T-One {
   font-family: "Roboto", sans-serif;
   font-weight: 900;
@@ -188,14 +172,12 @@ body {
   text-decoration: none;
   color: #fff;
 }
-
 .header .header-Top-Wrap .logo .logo-T-Two {
   font-family: "Caveat", cursive;
   font-weight: 100;
   font-size: 3.5rem;
   color: #29a587;
 }
-
 .header .header-Top-Mid {
   width: 90%;
   height: 100%;
@@ -204,7 +186,6 @@ body {
   text-align: center;
   align-items: center;
 }
-
 .header .header-Top-Mid .left-banner {
   width: 10%;
   height: 100%;
@@ -214,7 +195,6 @@ body {
   align-items: center;
   justify-content: center;
 }
-
 .header .header-Top-Mid .left-banner .cercle-One {
   width: 35px;
   height: 35px;
@@ -222,7 +202,6 @@ body {
   border: solid snow 1px;
   border-radius: 50%;
 }
-
 .header .header-Top-Mid .left-banner .line-El {
   height: 85%;
   width: 0;
@@ -231,7 +210,6 @@ body {
   border-top: none;
   border-bottom: none;
 }
-
 .header .header-Top-Mid .left-banner .cercle-Two {
   width: 35px;
   height: 35px;
@@ -239,7 +217,6 @@ body {
   border: solid snow 1px;
   border-radius: 50%;
 }
-
 .header .header-Top-Mid .mid-banner {
   width: 50%;
   display: flex;
@@ -248,7 +225,6 @@ body {
   text-align: center;
   align-items: center;
 }
-
 .header .header-Top-Mid .mid-banner .information-Wrap {
   display: flex;
   height: 100%;
@@ -258,7 +234,6 @@ body {
   flex-direction: column;
   justify-content: flex-start;
 }
-
 .header .header-Top-Mid .mid-banner .information-Wrap .title-Text {
   font-size: 20px;
   font-family: "Roboto", sans-serif;
@@ -272,22 +247,18 @@ body {
   text-decoration: none;
   outline: none;
 }
-
 .header .header-Top-Mid .mid-banner .information-Wrap .title-Text .title-Span-One {
   color: #29a587;
   font-family: "Rowdies", sans-serif;
 }
-
 .header .header-Top-Mid .mid-banner .information-Wrap .title-Text .title-Span-Two {
   font-family: "Rowdies", sans-serif;
   color: white;
 }
-
 .header .header-Top-Mid .mid-banner .information-Wrap .title-Name {
   display: flex;
   gap: 15px;
 }
-
 .header .header-Top-Mid .mid-banner .information-Wrap .title-Name .first-Name,
 .header .header-Top-Mid .mid-banner .information-Wrap .title-Name .Second-Name {
   font-size: 6rem;
@@ -301,11 +272,9 @@ body {
   font-weight: 900;
   font-family: "Rowdies", sans-serif;
 }
-
 .header .header-Top-Mid .mid-banner .information-Wrap .title-Name .Second-Name {
   color: #29a587;
 }
-
 .header .header-Top-Mid .mid-banner .information-Wrap .text-Two {
   font-family: "Caveat", cursive;
   font-size: 2rem;
@@ -317,33 +286,28 @@ body {
   text-decoration: none;
   outline: none;
 }
-
 .header .header-Top-Mid .mid-banner .information-Wrap .text-Par {
   font-family: "Caveat", cursive;
   font-size: 1.5rem;
   color: rgb(156, 153, 153);
 }
-
 .header .header-Top-Mid .mid-banner .information-Wrap .social-Buttons {
   display: flex;
   flex-direction: row;
   text-align: center;
   align-items: center;
 }
-
 .header .header-Top-Mid .mid-banner .information-Wrap .social-Buttons a i {
   font-size: 2rem;
   color: white;
   margin: 1rem;
   transition: all 150ms;
 }
-
 .header .header-Top-Mid .mid-banner .information-Wrap .social-Buttons a i:hover {
   font-size: 2rem;
   color: rgb(167, 165, 165);
   margin: 1rem;
 }
-
 .header .header-Top-Mid .mid-banner .information-Wrap .cv-Btn-Down {
   display: flex;
   flex-direction: row;
@@ -351,7 +315,6 @@ body {
   align-items: center;
   padding-left: 25px;
 }
-
 .header .header-Top-Mid .mid-banner .information-Wrap .cv-Btn-Down .down-Btn {
   padding: 15px 30px;
   border-radius: 2rem;
@@ -366,7 +329,6 @@ body {
   position: relative;
   content: "";
 }
-
 .header .header-Top-Mid .mid-banner .information-Wrap .cv-Btn-Down .down-Btn::after {
   content: "";
   display: block;
@@ -384,11 +346,9 @@ body {
   animation-fill-mode: both;
   animation-direction: alternate;
 }
-
 .header .header-Top-Mid .mid-banner .information-Wrap .cv-Btn-Down .down-Btn:hover {
   cursor: pointer;
 }
-
 .header .header-Top-Mid .mid-banner .information-Wrap .cv-Btn-Down .down-Btn:hover::after {
   content: "";
   height: 5%;
@@ -396,7 +356,6 @@ body {
   background-color: #29a587;
   animation-name: downBtnAfter;
 }
-
 .header .header-Top-Mid .mid-banner .information-Wrap .cv-Btn-Down .line-Decoration {
   width: 40px;
   height: 3px;
@@ -404,12 +363,10 @@ body {
   background-color: snow;
   margin-right: 12px;
 }
-
 .header .header-Top-Mid .mid-banner .information-Wrap .cv-Btn-Down .text-Btn-Last {
   font-family: "Rowdies", sans-serif;
   color: snow;
 }
-
 .header .header-Top-Mid .right-Banner {
   width: 50%;
   height: 100%;
@@ -420,7 +377,6 @@ body {
   justify-content: center;
   position: relative;
 }
-
 .header .header-Top-Mid .right-Banner .img-Text-Circle {
   height: 100%;
   width: 100%;
@@ -437,7 +393,6 @@ body {
   background-repeat: none;
   background-size: cover;
 }
-
 .header .header-Top-Mid .right-Banner .text-Cont-1,
 .header .header-Top-Mid .right-Banner .text-Cont-2 {
   position: absolute;
@@ -457,7 +412,6 @@ body {
   padding: 0;
   margin: 0;
 }
-
 .header .header-Top-Mid .right-Banner .text-Cont-1 h3,
 .header .header-Top-Mid .right-Banner .text-Cont-2 h3 {
   width: 50%;
@@ -466,32 +420,27 @@ body {
   padding: 0;
   margin: 0;
 }
-
 .header .header-Top-Mid .right-Banner .text-Cont-1 h4,
 .header .header-Top-Mid .right-Banner .text-Cont-2 h4 {
   padding: 0;
   margin: 0;
   width: 50%;
 }
-
 .header .header-Top-Mid .right-Banner .text-Cont-1 {
   left: 65px;
   top: 35%;
   z-index: -1;
 }
-
 .header .header-Top-Mid .right-Banner .text-Cont-2 {
   right: 150px;
   top: 75%;
   z-index: -1;
 }
-
 .header .header-Top-Bottom {
   height: 20%;
   width: 90%;
   position: relative;
 }
-
 .header .header-Top-Bottom .bottom-Text {
   font-size: 15rem;
   position: absolute;
@@ -504,7 +453,6 @@ body {
   padding: 0;
   margin: 0;
 }
-
 @keyframes downBtnBefore {
   to {
     height: 0%;
@@ -512,7 +460,6 @@ body {
     border-radius: 0%;
   }
 }
-
 @keyframes downBtnAfter {
   to {
     height: 100%;
@@ -525,25 +472,20 @@ body {
   .header .header-Top-Wrap .logo .logo-T-One {
     font-size: 3rem;
   }
-
   .header .header-Top-Wrap .logo .logo-T-Two {
     font-size: 3rem;
   }
-
   .header .header-Top-Mid .mid-banner .information-Wrap .title-Text {
     font-size: 15px;
   }
-
   .header .header-Top-Mid .mid-banner .information-Wrap .title-Name {
     display: flex;
     gap: 10px;
   }
-
   .header .header-Top-Mid .mid-banner .information-Wrap .title-Name .first-Name,
   .header .header-Top-Mid .mid-banner .information-Wrap .title-Name .Second-Name {
     font-size: 4rem;
   }
-
   .header .header-Top-Mid .right-Banner {
     width: 50%;
     height: 100%;
@@ -554,7 +496,6 @@ body {
     justify-content: center;
     position: relative;
   }
-
   .header .header-Top-Mid .right-Banner .img-Text-Circle {
     height: 100%;
     width: 100%;
@@ -571,13 +512,11 @@ body {
     background-repeat: none;
     background-size: cover;
   }
-
   .header .header-Top-Mid .right-Banner .text-Cont-1,
   .header .header-Top-Mid .right-Banner .text-Cont-2 {
     height: 50px;
     width: 200px;
   }
-
   .header .header-Top-Mid .right-Banner .text-Cont-1 h3,
   .header .header-Top-Mid .right-Banner .text-Cont-2 h3 {
     width: 50%;
@@ -586,7 +525,6 @@ body {
     padding: 0;
     margin: 0;
   }
-
   .header .header-Top-Mid .right-Banner .text-Cont-1 h4,
   .header .header-Top-Mid .right-Banner .text-Cont-2 h4 {
     font-size: 11px;
@@ -594,66 +532,54 @@ body {
     margin: 0;
     width: 50%;
   }
-
   .header .header-Top-Mid .right-Banner .text-Cont-1 {
     left: 15px;
     top: 35%;
     z-index: -1;
   }
-
   .header .header-Top-Mid .right-Banner .text-Cont-2 {
     right: 50px;
     top: 75%;
     z-index: -1;
   }
-
   .header .header-Top-Bottom {
     height: 20%;
     width: 90%;
     position: relative;
   }
-
   .header .header-Top-Bottom .bottom-Text {
     font-size: 8rem;
     top: 0%;
     left: 0%;
   }
 }
-
 @media screen and (max-width: 868px) {
   .header .header-Top-Wrap .logo .logo-T-One {
     font-size: 2rem;
   }
-
   .header .header-Top-Wrap .logo .logo-T-Two {
     font-size: 2rem;
   }
-
   .header .header-Top-Mid .mid-banner {
     width: 100%;
   }
-
   .header .header-Top-Mid .mid-banner p {
     max-width: 70%;
   }
-
   .header .header-Top-Mid .mid-banner .information-Wrap .title-Text {
     font-size: 15px;
   }
-
   .header .header-Top-Mid .mid-banner .information-Wrap .title-Name {
     display: flex;
     flex-direction: column;
     gap: 10px;
   }
-
   .header .header-Top-Mid .mid-banner .information-Wrap .title-Name .first-Name,
   .header .header-Top-Mid .mid-banner .information-Wrap .title-Name .Second-Name {
     font-size: 2.5rem;
     padding: 0;
     margin: 0;
   }
-
   .header .header-Top-Mid .mid-banner .information-Wrap .cv-Btn-Down {
     display: flex;
     flex-direction: column;
@@ -661,7 +587,6 @@ body {
     align-items: center;
     padding-left: 25px;
   }
-
   .header .header-Top-Mid .mid-banner .information-Wrap .cv-Btn-Down .down-Btn {
     padding: 15px 30px;
     border-radius: 2rem;
@@ -676,32 +601,26 @@ body {
     position: relative;
     content: "";
   }
-
   .header .header-Top-Mid .mid-banner .information-Wrap .cv-Btn-Down .line-Decoration {
     display: none;
   }
-
   .header .header-Top-Mid .mid-banner .information-Wrap .cv-Btn-Down .text-Btn-Last {
     display: none;
   }
-
   .header .header-Top-Mid .right-Banner {
     display: none;
   }
-
   .header .header-Top-Bottom {
     height: 25%;
     width: 90%;
     position: relative;
   }
-
   .header .header-Top-Bottom .bottom-Text {
     font-size: 4rem;
     top: 0%;
     left: 0%;
   }
 }
-
 .skills {
   display: flex;
   flex-direction: row;
@@ -712,7 +631,6 @@ body {
   height: clamp(500px, 100%, 1000px);
   margin-top: 5rem;
 }
-
 .skills .left-Deco-Skills {
   width: 10%;
   display: flex;
@@ -722,7 +640,6 @@ body {
   justify-content: center;
   height: 800px;
 }
-
 .skills .left-Deco-Skills .skills-Cercle-One {
   width: 35px;
   height: 35px;
@@ -730,7 +647,6 @@ body {
   border: solid snow 1px;
   border-radius: 50%;
 }
-
 .skills .left-Deco-Skills .skills-Line-El {
   height: 100%;
   width: 0;
@@ -739,7 +655,6 @@ body {
   border-top: none;
   border-bottom: none;
 }
-
 .skills .left-Deco-Skills .skills-Cercle-Two {
   width: 35px;
   height: 35px;
@@ -747,7 +662,6 @@ body {
   border: solid snow 1px;
   border-radius: 50%;
 }
-
 .skills .right-Skill-Skills {
   display: flex;
   flex-direction: column;
@@ -756,7 +670,6 @@ body {
   width: 80%;
   height: 100%;
 }
-
 .skills .right-Skill-Skills .titles-Skills {
   height: 20%;
   width: 100%;
@@ -766,7 +679,6 @@ body {
   align-items: center;
   justify-content: center;
 }
-
 .skills .right-Skill-Skills .titles-Skills .skills-Text-One {
   font-family: "Rowdies", sans-serif;
   font-size: 4rem;
@@ -774,7 +686,6 @@ body {
   padding: 0;
   margin: 0;
 }
-
 .skills .right-Skill-Skills .titles-Skills .skills-Text-Two {
   padding: 0;
   margin: 0;
@@ -784,7 +695,6 @@ body {
   justify-content: center;
   width: 25%;
 }
-
 .skills .right-Skill-Skills .titles-Skills .skills-Text-Two .text-Skills-2-1 {
   font-size: 2rem;
   font-family: "Roboto", sans-serif;
@@ -793,7 +703,6 @@ body {
   padding: 0;
   margin: 0;
 }
-
 .skills .right-Skill-Skills .titles-Skills .skills-Text-Two .text-Skills-2-2 {
   font-size: 3rem;
   font-family: "Caveat", cursive;
@@ -802,7 +711,6 @@ body {
   padding: 0;
   margin: 0;
 }
-
 .skills .right-Skill-Skills .skills-Cards-Wrap {
   height: 80%;
   width: 100%;
@@ -814,12 +722,10 @@ body {
   margin-top: 2rem;
   gap: 5rem;
 }
-
 .skills .right-Skill-Skills .skills-Cards-Wrap .skills-Card {
   width: 500px;
   height: 300px;
 }
-
 .skills .right-Skill-Skills .skills-Cards-Wrap .skills-Card .name-Lang-Num {
   display: flex;
   flex-direction: row;
@@ -829,13 +735,11 @@ body {
   text-align: center;
   align-items: center;
 }
-
 .skills .right-Skill-Skills .skills-Cards-Wrap .skills-Card .name-Lang-Num .skills-Name {
   font-size: 1.3rem;
   font-family: "Roboto", sans-serif;
   color: white;
 }
-
 .skills .right-Skill-Skills .skills-Cards-Wrap .skills-Card .name-Lang-Num .skills-Num {
   font-family: "Caveat", cursive;
   font-size: 2rem;
@@ -843,13 +747,11 @@ body {
   margin: 0;
   color: #29a587;
 }
-
 .skills .right-Skill-Skills .skills-Cards-Wrap .skills-Card .skills-P {
   color: white;
   font-weight: 300;
   font-family: "Caveat", cursive;
 }
-
 .skills .right-Skill-Skills .skills-Cards-Wrap .skills-Range-Wrap {
   height: 25%;
   width: 100%;
@@ -859,21 +761,18 @@ body {
   flex-direction: column;
   justify-content: center;
 }
-
 .skills .right-Skill-Skills .skills-Cards-Wrap .skills-Range-Wrap .skills-Range {
   width: 90%;
   height: 3px;
   background-color: #1d222a;
   border-radius: 1rem;
 }
-
 .skills .right-Skill-Skills .skills-Cards-Wrap .skills-Range-Wrap .skills-Range .skills-Range-Fill {
   background-color: #29a587;
   width: 90%;
   position: relative;
   height: 100%;
 }
-
 .skills .right-Skill-Skills .skills-Cards-Wrap .skills-Range-Wrap .skills-Range .skills-Range-Fill .skills-Range-Circile {
   height: 30px;
   width: 30px;
@@ -884,23 +783,18 @@ body {
   right: 0;
   bottom: -500%;
 }
-
 .skills .right-Skill-Skills .skills-Cards-Wrap .skills-Range-Wrap .skills-Range .skills-Range-Fill.Css {
   width: 85%;
 }
-
 .skills .right-Skill-Skills .skills-Cards-Wrap .skills-Range-Wrap .skills-Range .skills-Range-Fill.Scss {
   width: 60%;
 }
-
 .skills .right-Skill-Skills .skills-Cards-Wrap .skills-Range-Wrap .skills-Range .skills-Range-Fill.JavaScript {
   width: 55%;
 }
-
 .skills .right-Skill-Skills .skills-Cards-Wrap .skills-Range-Wrap .skills-Range .skills-Range-Fill.TypeScript {
   width: 35%;
 }
-
 .skills .right-Skill-Skills .skills-Cards-Wrap .skills-Range-Wrap .skills-Range .skills-Range-Fill.Tools {
   width: 50%;
 }
@@ -909,35 +803,28 @@ body {
   .skills .left-Deco-Skills {
     height: 2050px;
   }
-
   .skills .right-Skill-Skills .titles-Skills .skills-Text-One {
     font-size: 2rem;
   }
-
   .skills .right-Skill-Skills .titles-Skills .skills-Text-Two .text-Skills-2-1 {
     font-size: 1rem;
   }
-
   .skills .right-Skill-Skills .titles-Skills .skills-Text-Two .text-Skills-2-2 {
     font-size: 2rem;
   }
 }
-
 @media screen and (max-width: 768px) {
   .skills .left-Deco-Skills {
     height: 2300px;
   }
-
   .skills .left-Deco-Skills .skills-Line-El {
     height: 100%;
   }
-
   .skills .left-Deco-Skills .right-Skill-Skills .skills-Cards-Wrap .skills-Card {
     width: 400px;
     height: 270px;
   }
 }
-
 .projects {
   display: flex;
   flex-direction: row;
@@ -948,12 +835,10 @@ body {
   height: clamp(500px, 100%, 5000px);
   margin-top: 5rem;
 }
-
 .projects .left-Projects-Wrap {
   width: 70%;
   height: 100%;
 }
-
 .projects .left-Projects-Wrap .projects-Titles {
   width: 100%;
   height: 20%;
@@ -963,7 +848,6 @@ body {
   flex-direction: column;
   justify-content: center;
 }
-
 .projects .left-Projects-Wrap .projects-Titles .projects-Text-1 {
   font-family: "Rowdies", sans-serif;
   font-size: 5.5rem;
@@ -971,7 +855,6 @@ body {
   padding: 0;
   margin: 0;
 }
-
 .projects .left-Projects-Wrap .projects-Titles .projects-Text-2 {
   text-align: center;
   align-items: center;
@@ -982,7 +865,6 @@ body {
   margin: 0;
   gap: 5px;
 }
-
 .projects .left-Projects-Wrap .projects-Titles .projects-Text-2 .P-T-1-2 {
   font-family: "Rowdies", sans-serif;
   color: white;
@@ -990,7 +872,6 @@ body {
   padding: 0;
   margin: 0;
 }
-
 .projects .left-Projects-Wrap .projects-Titles .projects-Text-2 .P-T-2-2 {
   font-family: "Caveat", cursive;
   color: #29a587;
@@ -998,7 +879,6 @@ body {
   padding: 0;
   margin: 0;
 }
-
 .projects .left-Projects-Wrap .Projects-Wrap {
   width: 100%;
   height: 80%;
@@ -1011,7 +891,6 @@ body {
   gap: 2rem;
   margin-top: 2rem;
 }
-
 .projects .left-Projects-Wrap .Projects-Wrap .project-Card {
   background-color: #1d222a;
   height: 700px;
@@ -1027,7 +906,6 @@ body {
   padding: 10px;
   margin: 5px;
 }
-
 .projects .left-Projects-Wrap .Projects-Wrap .project-Card .project-Img-Wrap {
   height: 35%;
   width: 100%;
@@ -1038,27 +916,25 @@ body {
   transition: all 250ms;
   cursor: pointer;
 }
-
 .projects .left-Projects-Wrap .Projects-Wrap .project-Card .project-Img-Wrap .project-Img {
   transition: all 250ms;
   position: relative;
   user-select: none;
 }
-
 .projects .left-Projects-Wrap .Projects-Wrap .project-Card .project-Img-Wrap:hover .project-Img {
   transform: scale(1.1);
 }
-
 .projects .left-Projects-Wrap .Projects-Wrap .project-Card .project-P-Lang {
-  padding: 0;
+  padding: 1px;
   margin: 0;
   text-align: start;
   align-items: start;
   color: #29a587;
   font-family: "Rowdies", sans-serif;
   font-weight: 300;
+  height: 50px;
+  width: 90%;
 }
-
 .projects .left-Projects-Wrap .Projects-Wrap .project-Card .project-Name-Title {
   padding: 0;
   margin: 0;
@@ -1069,13 +945,11 @@ body {
   font-weight: 300;
   font-size: 2rem;
 }
-
 .projects .left-Projects-Wrap .Projects-Wrap .project-Card .project-P-Text {
   color: #fff;
   font-family: "Caveat", cursive;
   font-size: 1.7rem;
 }
-
 .projects .left-Projects-Wrap .Projects-Wrap .project-Btn-Wrap {
   height: 10%;
   width: 100%;
@@ -1086,13 +960,11 @@ body {
   justify-content: space-evenly;
   gap: 10px;
 }
-
 .projects .left-Projects-Wrap .Projects-Wrap .project-Btn-Wrap .see-Project-Wrap,
 .projects .left-Projects-Wrap .Projects-Wrap .project-Btn-Wrap .see-Code-Wrap {
   transition: all 500ms;
   cursor: pointer;
 }
-
 .projects .left-Projects-Wrap .Projects-Wrap .project-Btn-Wrap .see-Project-Wrap .see-Code-Wrap-A,
 .projects .left-Projects-Wrap .Projects-Wrap .project-Btn-Wrap .see-Code-Wrap .see-Code-Wrap-A {
   margin: 5px;
@@ -1102,35 +974,29 @@ body {
   text-decoration: none;
   transition: all 200ms;
 }
-
 .projects .left-Projects-Wrap .Projects-Wrap .project-Btn-Wrap .see-Project-Wrap #see-Code-Wrap-I,
 .projects .left-Projects-Wrap .Projects-Wrap .project-Btn-Wrap .see-Code-Wrap #see-Code-Wrap-I {
   transition: all 200ms;
   color: #29a587;
 }
-
 .projects .left-Projects-Wrap .Projects-Wrap .project-Btn-Wrap .see-Project-Wrap:hover .see-Code-Wrap-A {
   color: #fff;
   color: #29a587;
 }
-
 .projects .left-Projects-Wrap .Projects-Wrap .project-Btn-Wrap .see-Project-Wrap:hover #see-Code-Wrap-I {
   transition: all 200ms;
   color: #fff;
   margin-left: 15px;
 }
-
 .projects .left-Projects-Wrap .Projects-Wrap .project-Btn-Wrap .see-Code-Wrap:hover .see-Code-Wrap-A {
   color: #fff;
   color: #29a587;
 }
-
 .projects .left-Projects-Wrap .Projects-Wrap .project-Btn-Wrap .see-Code-Wrap:hover #see-Code-Wrap-I {
   transition: all 200ms;
   color: #fff;
   margin-left: 15px;
 }
-
 .projects .left-Projects-Wrap .view-More-Btn-Wrap {
   width: 100%;
   height: 100px;
@@ -1139,7 +1005,6 @@ body {
   justify-content: center;
   display: flex;
 }
-
 .projects .left-Projects-Wrap .view-More-Btn-Wrap .view-More-Btn {
   cursor: pointer;
   margin: 1rem;
@@ -1152,19 +1017,16 @@ body {
   font-size: 1rem;
   transition: all 150ms;
 }
-
 .projects .left-Projects-Wrap .view-More-Btn-Wrap .view-More-Btn:hover {
   background-color: #29a587;
   color: #1d222a;
   transform: scale(1.1);
 }
-
 .projects .left-Projects-Wrap .view-More-Btn-Wrap .view-More-Btn:active {
   background-color: #1d222a;
   color: #29a587;
   transform: scale(0.9);
 }
-
 .projects .Projects-Decoration-Bar {
   height: 1400px;
   width: 25%;
@@ -1175,7 +1037,6 @@ body {
   flex-direction: column;
   justify-content: center;
 }
-
 .projects .Projects-Decoration-Bar .Projects-Cercle-One {
   width: 45px;
   height: 45px;
@@ -1183,7 +1044,6 @@ body {
   border: solid snow 1px;
   border-radius: 50%;
 }
-
 .projects .Projects-Decoration-Bar .Projects-Line-El {
   height: 100%;
   width: 1px;
@@ -1192,7 +1052,6 @@ body {
   border-top: none;
   border-bottom: none;
 }
-
 .projects .Projects-Decoration-Bar .Projects-Cercle-Two {
   width: 45px;
   height: 45px;
@@ -1205,28 +1064,22 @@ body {
   .projects {
     width: 100%;
   }
-
   .projects .left-Projects-Wrap .projects-Titles .projects-Text-1 {
     font-size: 2.5rem;
   }
-
   .projects .left-Projects-Wrap .projects-Titles .projects-Text-2 {
     gap: 5px;
   }
-
   .projects .left-Projects-Wrap .projects-Titles .projects-Text-2 .P-T-1-2 {
     font-size: 1.5rem;
   }
-
   .projects .left-Projects-Wrap .projects-Titles .projects-Text-2 .P-T-2-2 {
     font-size: 2rem;
   }
-
   .projects .left-Projects-Wrap .Projects-Wrap {
     gap: 1rem;
     margin-top: 1rem;
   }
-
   .projects .left-Projects-Wrap .Projects-Wrap .project-Card {
     background-color: #1d222a;
     height: 600px;
@@ -1234,29 +1087,23 @@ body {
     padding: 5px;
     margin: 5px;
   }
-
   .projects .left-Projects-Wrap .Projects-Wrap .project-Card .project-Img-Wrap {
     border-radius: 1rem;
   }
-
   .projects .left-Projects-Wrap .Projects-Wrap .project-Card .project-P-Text {
     font-size: 1rem;
   }
-
   .projects .left-Projects-Wrap .Projects-Wrap .project-Btn-Wrap {
     gap: 5px;
   }
-
   .projects .left-Projects-Wrap .Projects-Wrap .project-Btn-Wrap .see-Project-Wrap .see-Code-Wrap-A,
   .projects .left-Projects-Wrap .Projects-Wrap .project-Btn-Wrap .see-Code-Wrap .see-Code-Wrap-A {
     margin: 5px;
     font-size: 0.7rem;
   }
-
   .projects .left-Projects-Wrap .view-More-Btn-Wrap .view-More-Btn {
     font-size: 1rem;
   }
-
   .projects .right-Projects-Wrap {
     width: 10%;
     display: flex;
@@ -1264,10 +1111,11 @@ body {
     align-items: center;
     justify-content: flex-end;
   }
-
   .projects .right-Projects-Wrap .Projects-Decoration-Bar {
     height: 1000px;
     width: 10%;
     margin: 5px;
   }
 }
+
+/*# sourceMappingURL=style.css.map */

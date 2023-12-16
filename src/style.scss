@@ -1112,13 +1112,15 @@ body {
         }
 
         .project-P-Lang {
-          padding: 0;
+          padding: 1px;
           margin: 0;
           text-align: start;
           align-items: start;
           color: #29a587;
           font-family: $fontThree;
           font-weight: 300;
+          height: 50px;
+          width: 90%;
         }
 
         .project-Name-Title {
