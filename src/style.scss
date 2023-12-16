@@ -1121,6 +1121,7 @@ body {
           font-weight: 300;
           height: 50px;
           width: 90%;
+          text-transform: uppercase;
         }
 
         .project-Name-Title {
@@ -1138,6 +1139,8 @@ body {
           color: #fff;
           font-family: $fontFour;
           font-size: 1.7rem;
+          height: 100px;
+          overflow-x: auto;
         }
       }
 
