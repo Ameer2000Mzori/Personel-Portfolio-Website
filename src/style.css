@@ -720,7 +720,7 @@ body {
   text-align: center;
   align-items: center;
   justify-content: center;
-  height: 500px;
+  height: 800px;
 }
 
 .skills .left-Deco-Skills .skills-Cercle-One {
@@ -732,7 +732,7 @@ body {
 }
 
 .skills .left-Deco-Skills .skills-Line-El {
-  height: 85%;
+  height: 100%;
   width: 0;
   background-color: #1d222a;
   border: solid snow 1px;
