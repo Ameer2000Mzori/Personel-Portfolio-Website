@@ -39,7 +39,9 @@ async function getData(API_KEY) {
   try {
     const resposne = await fetch(API_KEY);
     let data = await resposne.json();
-    console.log(data[0]);
+    console.log(data);
+
+    // listCards();
   } catch (error) {
     console.log("we got an error:", error);
   }
@@ -48,6 +50,9 @@ getData(API_KEY);
 
 // our functions
 const listCards = () => {
+  // let { description, homepage, html_url, name, topics } = data[0];
+  // console.log(description, homepage, html_url, name, topics);
+
   // creating our elements dynamiclly :
   const projectCard = document.createElement("div");
   projectCard.classList.add("project-Card");

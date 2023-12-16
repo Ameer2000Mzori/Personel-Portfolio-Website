@@ -74,7 +74,7 @@ function getData(API_KEY) {
                     return [4 /*yield*/, resposne.json()];
                 case 2:
                     data = _a.sent();
-                    console.log(data[0]);
+                    console.log(data);
                     return [3 /*break*/, 4];
                 case 3:
                     error_1 = _a.sent();
@@ -88,6 +88,8 @@ function getData(API_KEY) {
 getData(API_KEY);
 // our functions
 var listCards = function () {
+    // let { description, homepage, html_url, name, topics } = data[0];
+    // console.log(description, homepage, html_url, name, topics);
     // creating our elements dynamiclly :
     var projectCard = document.createElement("div");
     projectCard.classList.add("project-Card");
