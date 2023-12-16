@@ -55,6 +55,7 @@ openCloseBtn.addEventListener("click", openNav);
 //https://raw.githubusercontent.com/Ameer2000Mzori/Todo-List/main/sample/1.png
 // selecting elements
 var viewMoreBtn = document.getElementsByClassName("view-More-Btn")[0];
+var ProjectsWrap = document.getElementsByClassName("Projects-Wrap")[0];
 // gelobal varibales
 var countProjects = 6;
 // API KEY(S)
@@ -73,7 +74,7 @@ function getData(API_KEY) {
                     return [4 /*yield*/, resposne.json()];
                 case 2:
                     data = _a.sent();
-                    console.log(data);
+                    console.log(data[0]);
                     return [3 /*break*/, 4];
                 case 3:
                     error_1 = _a.sent();
@@ -86,4 +87,40 @@ function getData(API_KEY) {
 }
 getData(API_KEY);
 // our functions
+var listCards = function () {
+    // creating our elements dynamiclly :
+};
 // our event lisnters
+//
+//
+// our html loop up tree:
+// <div class="project-Card">
+//   <div class="project-Img-Wrap">
+//     <img
+//       class="project-Img"
+//       src="./assets/Screenshot 2023-12-14 111944.png"
+//       alt=""
+//     />
+//   </div>
+//   <p class="project-P-Lang">HTML,CSS,JAVASCRIPT</p>
+//   <h3 class="project-Name-Title">Contact Form</h3>
+//   <p class="project-P-Text">
+//     Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil quisquam iste
+//     doloremque repudiandae dolorem modi quas pariatur soluta, at quam nulla
+//     dolorum, illum dolores quibusdam distinctio ratione quidem laboriosam ex?
+//   </p>
+//   <div class="project-Btn-Wrap">
+//     <div class="see-Project-Wrap">
+//       <a href="#" class="see-Code-Wrap-A">
+//         SEE PROJECT
+//       </a>
+//       <i id="see-Code-Wrap-I" class="fa-solid fa-arrow-right"></i>
+//     </div>
+//     <div class="see-Code-Wrap">
+//       <a href="#" class="see-Code-Wrap-A">
+//         SEE CODE
+//       </a>
+//       <i id="see-Code-Wrap-I" class="fa-solid fa-arrow-right"></i>
+//     </div>
+//   </div>
+// </div>;
