@@ -1,6 +1,3 @@
-// save for later : https://api.github.com/users/ameer2000mzori/repos
-// "url": "https://api.github.com/repos/Ameer2000Mzori/Animated-Template",
-
 /*  NAVBAR */
 
 // selecting elements
@@ -18,3 +15,19 @@ const openNav = (): void => {
 
 // our event lisnters
 openCloseBtn.addEventListener("click", openNav);
+
+/*  PROJECTS API */
+
+// save for later : https://api.github.com/users/ameer2000mzori/repos
+// "url": "https://api.github.com/repos/Ameer2000Mzori/Animated-Template",
+
+// selecting elements
+const viewMoreBtn = document.getElementsByClassName("view-More-Btn")[0];
+
+// API KEY(S)
+
+// API FETCH DATA
+
+// our functions
+
+// our event lisnters
