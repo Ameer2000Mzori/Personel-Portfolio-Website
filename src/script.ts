@@ -88,10 +88,12 @@ const listCards = (data) => {
 
     const projectNameTitle = document.createElement("h3");
     projectNameTitle.classList.add("project-Name-Title");
+    projectNameTitle.textContent = `${name}`;
     projectCard.appendChild(projectNameTitle);
 
     const projectPText = document.createElement("p");
     projectPText.classList.add("project-P-Text");
+    projectPText.textContent = `${description}`;
     projectCard.appendChild(projectPText);
 
     const projectBtnWrap = document.createElement("div");
@@ -104,6 +106,8 @@ const listCards = (data) => {
 
     const seeCodeWrapA = document.createElement("a");
     seeCodeWrapA.classList.add("see-Code-Wrap-A");
+    seeCodeWrapA.setAttribute("target", "_blank");
+    seeCodeWrapA.href = `${homepage}`;
     seeCodeWrapA.textContent = `SEE PROJECT`;
     seeProjectWrap.appendChild(seeCodeWrapA);
 
@@ -118,6 +122,8 @@ const listCards = (data) => {
 
     const seeCodeWrapAA = document.createElement("a");
     seeCodeWrapAA.classList.add("see-Code-Wrap-A");
+    seeCodeWrapAA.setAttribute("target", "_blank");
+    seeCodeWrapAA.href = `${html_url}`;
     seeCodeWrapAA.textContent = `SEE CODE`;
     seeCodeWrap.appendChild(seeCodeWrapAA);
 
@@ -131,41 +137,3 @@ const listCards = (data) => {
 };
 
 // our event lisnters
-
-//
-
-//
-
-// our html loop up tree:
-
-// <div class="project-Card">
-//   <div class="project-Img-Wrap">
-//     <img
-//       class="project-Img"
-//       src="./assets/Screenshot 2023-12-14 111944.png"
-//       alt=""
-//     />
-//   </div>
-//   <p class="project-P-Lang">HTML,CSS,JAVASCRIPT</p>
-//   <h3 class="project-Name-Title">Contact Form</h3>
-//   <p class="project-P-Text">
-//     Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil quisquam iste
-//     doloremque repudiandae dolorem modi quas pariatur soluta, at quam nulla
-//     dolorum, illum dolores quibusdam distinctio ratione quidem laboriosam ex?
-//   </p>
-
-//   <div class="project-Btn-Wrap">
-//     <div class="see-Project-Wrap">
-//       <a href="#" class="see-Code-Wrap-A">
-//         SEE PROJECT
-//       </a>
-//       <i id="see-Code-Wrap-I" class="fa-solid fa-arrow-right"></i>
-//     </div>
-//     <div class="see-Code-Wrap">
-//       <a href="#" class="see-Code-Wrap-A">
-//         SEE CODE
-//       </a>
-//       <i id="see-Code-Wrap-I" class="fa-solid fa-arrow-right"></i>
-//     </div>
-//   </div>
-// </div>;
