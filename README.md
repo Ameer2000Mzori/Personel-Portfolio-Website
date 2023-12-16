@@ -18,7 +18,7 @@
 
 # 📖 About This Project <a name="about-project"></a>
 
-> Personal Portfolio Website is crafted with HTML, SCSS, and TypeScript. While this website may not be my official portfolio, the information presented is genuine. It's just a regular new website. I employed linters to uncover and address code errors, ensuring the maintenance of clean code. Please check out the live demo.
+> Personal Portfolio is a website created with HTML, SCSS, and TypeScript, utilizing the GitHub API to retrieve my data and showcase it on the site. Linters are employed to address code errors and maintain code cleanliness. Feel free to explore the live demo.
 
 # Sample Of Website <a name="Sample-Of-Website"></a>
 
