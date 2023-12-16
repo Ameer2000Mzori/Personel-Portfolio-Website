@@ -1005,8 +1005,8 @@ body {
   align-items: center;
   justify-content: center;
   width: 100%;
-  height: 100vh;
-  // height: clamp(500px, 100%, 1000px);
+  // height: 100vh;
+  height: clamp(500px, 100%, 1000px);
   margin-top: 5rem;
 
   .left-Projects-Wrap {
@@ -1024,7 +1024,7 @@ body {
 
       .projects-Text-1 {
         font-family: $fontThree;
-        font-size: 6rem;
+        font-size: 5.5rem;
         color: #fff;
         padding: 0;
         margin: 0;
@@ -1054,6 +1054,127 @@ body {
           font-size: 3rem;
           padding: 0;
           margin: 0;
+        }
+      }
+    }
+
+    .Projects-Wrap {
+      width: 100%;
+      height: 80%;
+      display: flex;
+      flex-direction: row;
+      text-align: center;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 2rem;
+      margin-top: 2rem;
+
+      .project-Card {
+        background-color: #1d222a;
+        height: 700px;
+        width: 410px;
+        display: flex;
+        flex-direction: column;
+        text-align: start;
+        align-items: start;
+        flex-wrap: wrap;
+        gap: 5px;
+        border-radius: 1rem;
+        justify-content: space-evenly;
+        padding: 10px;
+        margin: 5px;
+
+        .project-Img-Wrap {
+          height: 35%;
+          width: 100%;
+          overflow: hidden;
+          display: flex;
+          flex-direction: column;
+          border-radius: 1rem;
+          transition: all 250ms;
+          cursor: pointer;
+
+          .project-Img {
+            transition: all 250ms;
+            position: relative;
+            user-select: none;
+          }
+
+          &:hover {
+            .project-Img {
+              transform: scale(1.1);
+            }
+          }
+        }
+
+        .project-P-Lang {
+          padding: 0;
+          margin: 0;
+          text-align: start;
+          align-items: start;
+          color: #29a587;
+          font-family: $fontThree;
+          font-weight: 300;
+        }
+
+        .project-Name-Title {
+          padding: 0;
+          margin: 0;
+          text-align: start;
+          align-items: start;
+          color: #fff;
+          font-family: $fontThree;
+          font-weight: 300;
+          font-size: 2rem;
+        }
+
+        .project-P-Text {
+          color: #fff;
+          font-family: $fontFour;
+          font-size: 1.7rem;
+        }
+      }
+
+      .project-Btn-Wrap {
+        height: 10%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        text-align: start;
+        align-items: start;
+        justify-content: space-evenly;
+        gap: 10px;
+
+        .see-Project-Wrap,
+        .see-Code-Wrap {
+          transition: all 500ms;
+          cursor: pointer;
+
+          .see-Code-Wrap-A {
+            margin: 5px;
+            font-family: $fontThree;
+            color: #fff;
+            font-size: 1.3rem;
+            text-decoration: none;
+            transition: all 200ms;
+          }
+
+          #see-Code-Wrap-I {
+            transition: all 200ms;
+            color: #29a587;
+          }
+
+          &:hover {
+            .see-Code-Wrap-A a {
+              color: #29a587;
+            }
+
+            #see-Code-Wrap-I {
+              margin-left: 5px;
+              color: #fff;
+            }
+          }
         }
       }
     }
