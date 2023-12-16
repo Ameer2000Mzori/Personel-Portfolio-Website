@@ -997,3 +997,14 @@ body {
     }
   }
 }
+//  projects
+.projects {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: clamp(500px, 100%, 1000px);
+  margin-top: 5rem;
+}
