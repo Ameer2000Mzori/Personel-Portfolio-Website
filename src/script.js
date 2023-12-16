@@ -86,14 +86,11 @@ function getData(API_KEY) {
         });
     });
 }
-getData(API_KEY);
 // our functions
 var listCards = function (data) {
     // our for each func / loop :
     data.forEach(function (info) {
-        console.log(info);
         var description = info.description, homepage = info.homepage, html_url = info.html_url, name = info.name, topics = info.topics;
-        console.log(description, homepage, html_url, name, topics);
         // creating our elements dynamiclly :
         var projectCard = document.createElement("div");
         projectCard.classList.add("project-Card");
@@ -110,7 +107,6 @@ var listCards = function (data) {
         for (var _i = 0, topics_1 = topics; _i < topics_1.length; _i++) {
             var topic = topics_1[_i];
             topicsCount++;
-            console.log(topicsCount);
             if (topicsCount < topics.length) {
                 projectPLang.textContent += topic + ", ";
             }
@@ -161,7 +157,19 @@ var listCards = function (data) {
 };
 // our view more projects function
 var viewMoreProjects = function () {
-    console.log("view more");
+    if (countProjects == 6) {
+        ProjectsWrap.innerHTML = "";
+        countProjects = 12;
+        var newData12 = "https://api.github.com/users/ameer2000mzori/repos?per_page=".concat(countProjects, "&sort=created");
+        getData(newData12);
+    }
+    else {
+        ProjectsWrap.innerHTML = "";
+        countProjects = 6;
+        var newData6 = "https://api.github.com/users/ameer2000mzori/repos?per_page=".concat(countProjects, "&sort=created");
+        getData(newData6);
+    }
 };
 // our event lisnters
 viewMoreBtn.addEventListener("click", viewMoreProjects);
+getData(API_KEY);

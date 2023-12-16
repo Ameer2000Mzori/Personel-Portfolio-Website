@@ -46,15 +46,12 @@ async function getData(API_KEY) {
     console.log("we got an error:", error);
   }
 }
-getData(API_KEY);
 
 // our functions
 const listCards = (data) => {
   // our for each func / loop :
   data.forEach((info) => {
-    console.log(info);
     let { description, homepage, html_url, name, topics } = info;
-    console.log(description, homepage, html_url, name, topics);
     // creating our elements dynamiclly :
     const projectCard = document.createElement("div");
     projectCard.classList.add("project-Card");
@@ -75,7 +72,6 @@ const listCards = (data) => {
 
     for (let topic of topics) {
       topicsCount++;
-      console.log(topicsCount);
 
       if (topicsCount < topics.length) {
         projectPLang.textContent += topic + `, `;
@@ -138,8 +134,20 @@ const listCards = (data) => {
 
 // our view more projects function
 const viewMoreProjects = () => {
-  console.log("view more");
+  if (countProjects == 6) {
+    ProjectsWrap.innerHTML = ``;
+    countProjects = 12;
+    let newData12 = `https://api.github.com/users/ameer2000mzori/repos?per_page=${countProjects}&sort=created`;
+    getData(newData12);
+  } else {
+    ProjectsWrap.innerHTML = ``;
+    countProjects = 6;
+    let newData6 = `https://api.github.com/users/ameer2000mzori/repos?per_page=${countProjects}&sort=created`;
+    getData(newData6);
+  }
 };
 
 // our event lisnters
+
 viewMoreBtn.addEventListener("click", viewMoreProjects);
+getData(API_KEY);
