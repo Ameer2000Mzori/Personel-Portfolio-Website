@@ -1826,3 +1826,176 @@ body {
     padding: 0.7rem;
   }
 }
+
+@media screen and (max-width: 790px) {
+  .contact .contact-Top {
+    width: 80%;
+    height: 15%;
+  }
+
+  .contact .contact-Top .contact-Title-1 {
+    font-size: 1rem;
+  }
+
+  .contact .contact-Top .contact-title-2 {
+    gap: 5px;
+  }
+
+  .contact .contact-Top .contact-title-2 .contact-Title-2-2 {
+    font-size: 1rem;
+  }
+
+  .contact .contact-Bottom {
+    display: flex;
+    width: 90%;
+    height: 70%;
+  }
+
+  .contact .contact-Bottom .contact-Left-Side {
+    display: none;
+  }
+
+  .contact .contact-Bottom .contact-Mid-Side {
+    display: none;
+  }
+
+  .contact .contact-Bottom .contact-Right-Side {
+    height: 100%;
+    width: 100%;
+  }
+
+  .contact .contact-Bottom .contact-Right-Side .form {
+    width: 100%;
+    height: 100%;
+    gap: 5px;
+  }
+
+  .contact .contact-Bottom .contact-Right-Side .form .name-Email-Wrap {
+    flex-direction: column;
+    width: 100%;
+    height: 50%;
+  }
+
+  .contact .contact-Bottom .contact-Right-Side .form .name-Email-Wrap .name-Wrap {
+    flex-direction: column;
+  }
+
+  .contact .contact-Bottom .contact-Right-Side .form .name-Email-Wrap .name-Wrap .name-Text-Wrap {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+  }
+
+  .contact .contact-Bottom .contact-Right-Side .form .name-Email-Wrap .name-Wrap .name-Text-Wrap .label-Name {
+    text-align: center;
+    font-size: 0.7rem;
+    height: 20px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 600;
+    color: #fff;
+    padding: 0;
+    margin: 0;
+  }
+
+  .contact .contact-Bottom .contact-Right-Side .form .name-Email-Wrap .name-Wrap .name-Text-Wrap .label-Must {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    text-align: center;
+    align-items: center;
+    font-size: 1rem;
+    color: #29a587;
+    height: 35px;
+  }
+
+  .contact .contact-Bottom .contact-Right-Side .form .name-Email-Wrap .name-Wrap .name-Input {
+    padding: 7px 30px;
+  }
+
+  .contact .contact-Bottom .contact-Right-Side .form .name-Email-Wrap .email-Wrap .email-Text-Wrap .label-Email {
+    font-size: 0.7rem;
+  }
+
+  .contact .contact-Bottom .contact-Right-Side .form .name-Email-Wrap .email-Wrap .email-Text-Wrap .label-Must {
+    font-size: 1rem;
+  }
+
+  .contact .contact-Bottom .contact-Right-Side .form .name-Email-Wrap .email-Wrap .email-Input {
+    padding: 7px 30px;
+    margin-top: 0.5rem;
+  }
+
+  .contact .contact-Bottom .contact-Right-Side .form .subject-Wrap {
+    width: 70%;
+    height: 15%;
+  }
+
+  .contact .contact-Bottom .contact-Right-Side .form .subject-Wrap .subject-Text-Wrap .label-Subject {
+    font-size: 0.7rem;
+    height: 20px;
+  }
+
+  .contact .contact-Bottom .contact-Right-Side .form .subject-Wrap .subject-Text-Wrap .subject-Label-Must {
+    font-size: 1rem;
+    color: #29a587;
+    height: 35px;
+  }
+
+  .contact .contact-Bottom .contact-Right-Side .form .subject-Wrap .subject-Input {
+    padding: 10px 50px;
+    margin-top: 0.5rem;
+    width: 55%;
+  }
+
+  .contact .contact-Bottom .contact-Right-Side .form .message-Wrap {
+    width: 70%;
+    height: 30%;
+  }
+
+  .contact .contact-Bottom .contact-Right-Side .form .message-Wrap .message-Text-Wrap {
+    width: 100%;
+    height: 26%;
+  }
+
+  .contact .contact-Bottom .contact-Right-Side .form .message-Wrap .message-Text-Wrap .label-Message {
+    font-size: 0.7rem;
+    height: 20px;
+  }
+
+  .contact .contact-Bottom .contact-Right-Side .form .message-Wrap .message-Text-Wrap .message-Label-Must {
+    font-size: 1rem;
+    color: #29a587;
+    height: 35px;
+  }
+
+  .contact .contact-Bottom .contact-Right-Side .form .message-Wrap .message-Text-Area {
+    margin-top: 0.5rem;
+    width: 80%;
+    height: 450%;
+    padding: 1rem;
+  }
+
+  .contact .contact-Bottom .contact-Right-Side .form .send-Button-Wrap {
+    width: 100%;
+    height: 50px;
+  }
+
+  .contact .contact-Bottom .contact-Right-Side .form .send-Button-Wrap .sent-Button {
+    padding: 10px 35px;
+    border-radius: 1rem;
+  }
+
+  .contact .contact-Bottom .contact-Right-Side .form .send-Button-Wrap .sent-Button:hover {
+    transform: scale(1.1);
+    background-color: #29a587;
+  }
+
+  .contact .contact-Bottom .contact-Right-Side .form .send-Button-Wrap .sent-Button:active {
+    transform: scale(0.9);
+    background-color: transparent;
+  }
+}

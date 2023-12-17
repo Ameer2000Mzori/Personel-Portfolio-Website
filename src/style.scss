@@ -1358,7 +1358,6 @@ body {
   align-items: center;
   justify-content: center;
   width: 100%;
-  // height: clamp(500px, 100%, 1000px);
   height: 100vh;
   margin-top: 1rem;
 
@@ -1941,5 +1940,182 @@ body {
 }
 
 @media screen and (max-width: 790px) {
-  // Styles for large screens (e.g., laptops)
+  .contact {
+    .contact-Top {
+      width: 80%;
+      height: 15%;
+
+      .contact-Title-1 {
+        font-size: 1rem;
+      }
+
+      .contact-title-2 {
+        gap: 5px;
+
+        .contact-Title-2-2 {
+          font-size: 1rem;
+        }
+      }
+    }
+
+    .contact-Bottom {
+      display: flex;
+      width: 90%;
+      height: 70%;
+
+      .contact-Left-Side {
+        display: none;
+      }
+
+      .contact-Mid-Side {
+        display: none;
+      }
+
+      .contact-Right-Side {
+        height: 100%;
+        width: 100%;
+
+        .form {
+          width: 100%;
+          height: 100%;
+          gap: 5px;
+
+          .name-Email-Wrap {
+            flex-direction: column;
+            width: 100%;
+            height: 50%;
+
+            .name-Wrap {
+              flex-direction: column;
+
+              .name-Text-Wrap {
+                display: flex;
+                flex-direction: row;
+                text-align: center;
+                align-items: center;
+                justify-content: center;
+                padding: 0;
+                margin: 0;
+
+                .label-Name {
+                  text-align: center;
+                  font-size: 0.7rem;
+                  height: 20px;
+                  font-family: $fontTwo;
+                  font-weight: 600;
+                  color: #fff;
+                  padding: 0;
+                  margin: 0;
+                }
+
+                .label-Must {
+                  display: flex;
+                  flex-direction: column;
+                  justify-content: flex-start;
+                  text-align: center;
+                  align-items: center;
+                  font-size: 1rem;
+                  color: #29a587;
+                  height: 35px;
+                }
+              }
+
+              .name-Input {
+                padding: 7px 30px;
+              }
+            }
+
+            .email-Wrap {
+              .email-Text-Wrap {
+                .label-Email {
+                  font-size: 0.7rem;
+                }
+
+                .label-Must {
+                  font-size: 1rem;
+                }
+              }
+
+              .email-Input {
+                padding: 7px 30px;
+                margin-top: 0.5rem;
+              }
+            }
+          }
+
+          .subject-Wrap {
+            width: 70%;
+            height: 15%;
+
+            .subject-Text-Wrap {
+              .label-Subject {
+                font-size: 0.7rem;
+                height: 20px;
+              }
+
+              .subject-Label-Must {
+                font-size: 1rem;
+                color: #29a587;
+                height: 35px;
+              }
+            }
+
+            .subject-Input {
+              padding: 10px 50px;
+              margin-top: 0.5rem;
+              width: 55%;
+            }
+          }
+
+          .message-Wrap {
+            width: 70%;
+            height: 30%;
+
+            .message-Text-Wrap {
+              width: 100%;
+              height: 26%;
+
+              .label-Message {
+                font-size: 0.7rem;
+                height: 20px;
+              }
+
+              .message-Label-Must {
+                font-size: 1rem;
+                color: #29a587;
+                height: 35px;
+              }
+            }
+
+            .message-Text-Area {
+              margin-top: 0.5rem;
+              width: 80%;
+              height: 450%;
+              padding: 1rem;
+            }
+          }
+
+          .send-Button-Wrap {
+            width: 100%;
+            height: 50px;
+
+            .sent-Button {
+              padding: 10px 35px;
+              border-radius: 1rem;
+
+              &:hover {
+                transform: scale(1.1);
+                background-color: #29a587;
+              }
+
+              &:active {
+                transform: scale(0.9);
+                background-color: transparent;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
 }
