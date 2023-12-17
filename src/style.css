@@ -1999,3 +1999,24 @@ body {
     background-color: transparent;
   }
 }
+
+.footer {
+  display: flex;
+  flex-direction: row;
+  height: 30px;
+  width: 100%;
+  text-align: center;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-top: 10rem;
+}
+
+.footer .footer-Left-Wrap {
+  gap: 15px;
+  display: flex;
+}
+
+.footer .footer-Left-Wrap #footer-Icon {
+  color: white;
+  font-size: 2rem;
+}
