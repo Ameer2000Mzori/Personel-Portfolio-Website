@@ -1517,7 +1517,7 @@ body {
         width: 100%;
         height: 100%;
         justify-content: space-evenly;
-        gap: 15px;
+        gap: 5px;
 
         .name-Email-Wrap {
           display: flex;
@@ -1527,7 +1527,7 @@ body {
           align-items: center;
           justify-content: space-evenly;
           width: 100%;
-          height: 25%;
+          height: 24%;
 
           .name-Wrap {
             display: flex;
@@ -1569,7 +1569,7 @@ body {
 
             .name-Input {
               padding: 10px 50px;
-              margin-top: 1rem;
+              margin-top: 0.5rem;
               font-family: $fontTwo;
               color: white;
               background-color: #1d222a;
@@ -1644,7 +1644,7 @@ body {
             text-align: start;
             align-items: center;
             width: 100%;
-            height: 25%;
+            height: 26%;
             padding: 0;
             margin: 0;
 
@@ -1673,7 +1673,7 @@ body {
 
           .subject-Input {
             padding: 10px 50px;
-            margin-top: 1rem;
+            margin-top: 0.5rem;
             font-family: $fontTwo;
             color: white;
             background-color: #1d222a;
@@ -1681,6 +1681,61 @@ body {
             border: solid rgb(126, 124, 124) 2px;
             outline: none;
             width: 83%;
+          }
+        }
+
+        .message-Wrap {
+          display: flex;
+          text-align: start;
+          align-items: start;
+          flex-direction: column;
+          width: 80%;
+          height: 30%;
+
+          .message-Text-Wrap {
+            display: flex;
+            flex-wrap: wrap;
+            text-align: start;
+            align-items: center;
+            width: 100%;
+            height: 26%;
+            padding: 0;
+            margin: 0;
+
+            .label-Message {
+              text-align: center;
+              font-size: 1rem;
+              height: 20px;
+              font-family: $fontTwo;
+              font-weight: 600;
+              color: #fff;
+              padding: 0;
+              margin: 0;
+            }
+
+            .message-Label-Must {
+              display: flex;
+              flex-direction: column;
+              justify-content: flex-start;
+              text-align: center;
+              align-items: center;
+              font-size: 2.5rem;
+              color: #29a587;
+              height: 35px;
+            }
+          }
+
+          .message-Text-Area {
+            margin-top: 0.5rem;
+            font-family: $fontTwo;
+            color: white;
+            background-color: #1d222a;
+            border-radius: 2rem;
+            border: solid rgb(126, 124, 124) 2px;
+            width: 94%;
+            height: 450%;
+            padding: 1rem;
+            resize: none;
           }
         }
       }
