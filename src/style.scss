@@ -1807,6 +1807,9 @@ body {
     }
 
     .contact-Bottom {
+      display: flex;
+      justify-content: space-evenly;
+
       .contact-Left-Side {
         .contact-Decoration-Bar {
           width: 5%;
@@ -1859,9 +1862,84 @@ body {
 //  Contact Responsvness
 
 @media screen and (max-width: 950px) {
-  // Styles for large screens (e.g., laptops)
+  .contact {
+    .contact-Top {
+      .contact-Title-1 {
+        font-size: 5rem;
+      }
+
+      .contact-title-2 {
+        display: flex;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        font-family: $fontThree;
+        color: white;
+        padding: 0;
+        margin: 0;
+
+        .contact-Title-2-1 {
+          font-family: $fontThree;
+          color: #29a587;
+        }
+
+        .contact-Title-2-2 {
+          font-family: $fontFour;
+          color: white;
+          font-size: 3rem;
+        }
+      }
+    }
+
+    .contact-Bottom {
+      .contact-Left-Side {
+        display: none;
+      }
+
+      .contact-Mid-Side {
+        width: 35%;
+        height: 100%;
+
+        .contact-Card {
+          #contact-Mid-Icon {
+            font-size: 0.5rem;
+          }
+
+          .contact-Mid-Line {
+            margin-right: 15px;
+          }
+
+          .contact-Mid-Info {
+            .contact-Info-Text-H3 {
+              font-size: 1rem;
+            }
+
+            .contact-Info-Text-P {
+              font-size: 0.5rem;
+              max-width: 70%;
+            }
+          }
+        }
+      }
+
+      .contact-Right-Side {
+        width: 80%;
+        margin-left: 1rem;
+
+        .form {
+          .subject-Wrap {
+            .subject-Input {
+              width: 100%;
+              padding: 0.7rem;
+            }
+          }
+        }
+      }
+    }
+  }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 790px) {
   // Styles for large screens (e.g., laptops)
 }
