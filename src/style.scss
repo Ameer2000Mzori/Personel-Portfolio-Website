@@ -1504,5 +1504,132 @@ body {
         }
       }
     }
+
+    .contact-Right-Side {
+      height: 100%;
+      width: 70%;
+
+      .form {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        justify-content: space-evenly;
+        gap: 15px;
+
+        .name-Email-Wrap {
+          display: flex;
+          flex-direction: row;
+          flex-wrap: wrap;
+          text-align: center;
+          align-items: center;
+          justify-content: space-evenly;
+          width: 100%;
+          height: 25%;
+
+          .name-Wrap {
+            display: flex;
+            flex-direction: column;
+            text-align: start;
+            align-items: start;
+
+            .name-Text-Wrap {
+              display: flex;
+              flex-direction: row;
+              text-align: center;
+              align-items: center;
+              justify-content: center;
+              padding: 0;
+              margin: 0;
+
+              .label-Name {
+                text-align: center;
+                font-size: 1rem;
+                height: 20px;
+                font-family: $fontTwo;
+                font-weight: 600;
+                color: #fff;
+                padding: 0;
+                margin: 0;
+              }
+
+              .label-Must {
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-start;
+                text-align: center;
+                align-items: center;
+                font-size: 2.5rem;
+                color: #29a587;
+                height: 35px;
+              }
+            }
+
+            .name-Input {
+              padding: 10px 50px;
+              margin-top: 1rem;
+              font-family: $fontTwo;
+              color: white;
+              background-color: #1d222a;
+              border-radius: 2rem;
+              border: solid rgb(126, 124, 124) 2px;
+              outline: none;
+            }
+          }
+
+          .email-Wrap {
+            display: flex;
+            flex-direction: column;
+            text-align: start;
+            align-items: start;
+
+            .email-Text-Wrap {
+              display: flex;
+              flex-direction: row;
+              text-align: center;
+              align-items: center;
+              justify-content: center;
+              padding: 0;
+              margin: 0;
+
+              .label-Email {
+                text-align: center;
+                font-size: 1rem;
+                height: 20px;
+                font-family: $fontTwo;
+                font-weight: 600;
+                color: #fff;
+                padding: 0;
+                margin: 0;
+              }
+
+              .label-Must {
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-start;
+                text-align: center;
+                align-items: center;
+                font-size: 2.5rem;
+                color: #29a587;
+                height: 35px;
+              }
+            }
+
+            .email-Input {
+              padding: 10px 50px;
+              margin-top: 1rem;
+              font-family: $fontTwo;
+              color: white;
+              background-color: #1d222a;
+              border-radius: 2rem;
+              border: solid rgb(126, 124, 124) 2px;
+              outline: none;
+            }
+          }
+        }
+      }
+    }
   }
 }
