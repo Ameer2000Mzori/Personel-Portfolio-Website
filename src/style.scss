@@ -2129,6 +2129,7 @@ body {
   align-items: center;
   justify-content: space-evenly;
   margin-top: 10rem;
+  margin-bottom: 2rem;
 
   .footer-Left-Wrap {
     gap: 15px;
@@ -2159,7 +2160,34 @@ body {
     }
 
     .text-Rights-1-2 {
-      font-size: 1.5rem;
+      font-size: 1.7rem;
+      font-family: $fontFour;
+      padding: 0;
+      margin: 0;
+      color: #29a587;
+    }
+  }
+
+  .footer-Right-Wrap {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    gap: 1px;
+    padding: 0;
+    margin: 0;
+
+    .footer-Made-Text-1 {
+      font-size: 1rem;
+      font-family: $fontThree;
+      color: white;
+      padding: 0;
+      margin: 0;
+    }
+
+    .footer-Made-Text-2 {
+      font-size: 1.7rem;
       font-family: $fontFour;
       padding: 0;
       margin: 0;
