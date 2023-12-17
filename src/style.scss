@@ -2195,3 +2195,18 @@ body {
     }
   }
 }
+// Footer Responsvnesss
+@media screen and (max-width: 768px) {
+  .footer {
+    display: flex;
+    flex-direction: column;
+    height: 30px;
+    width: 100%;
+    text-align: center;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 5rem;
+    gap: 25px;
+    margin-bottom: 5rem;
+  }
+}
