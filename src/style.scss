@@ -1358,11 +1358,13 @@ body {
   align-items: center;
   justify-content: center;
   width: 100%;
-  height: clamp(500px, 100%, 1000px);
-  margin-top: 5rem;
+  // height: clamp(500px, 100%, 1000px);
+  height: 100vh;
+  margin-top: 1rem;
 
   .contact-Top {
     width: 80%;
+    height: 30%;
 
     .contact-Title-1 {
       font-size: 6rem;
@@ -1398,6 +1400,8 @@ body {
 
   .contact-Bottom {
     display: flex;
+    width: 60%;
+    height: 70%;
 
     .contact-Left-Side {
       .contact-Decoration-Bar {
@@ -1433,6 +1437,70 @@ body {
           background-color: #1d222a;
           border: solid snow 1px;
           border-radius: 50%;
+        }
+      }
+    }
+
+    .contact-Mid-Side {
+      width: 35%;
+      height: 100%;
+      margin-left: 5rem;
+      text-align: center;
+      align-items: start;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+
+      .contact-Card {
+        display: flex;
+        text-align: center;
+        align-items: center;
+        height: 10%;
+
+        #contact-Mid-Icon {
+          height: 40px;
+          width: 40px;
+          border-radius: 50%;
+          text-align: center;
+          align-items: center;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          background-color: #1d222a;
+          color: white;
+          border: solid white 2px;
+          font-size: 1rem;
+        }
+
+        .contact-Mid-Line {
+          width: 40px;
+          height: 2px;
+          background-color: #fff;
+          margin-right: 15px;
+        }
+
+        .contact-Mid-Info {
+          display: flex;
+          flex-direction: column;
+          text-align: start;
+          align-items: start;
+
+          .contact-Info-Text-H3 {
+            font-family: $fontFour;
+            font-size: 2rem;
+            color: white;
+            padding: 0;
+            margin: 0;
+          }
+
+          .contact-Info-Text-P {
+            font-family: $fontTwo;
+            font-weight: 600;
+            font-size: 0.8rem;
+            color: rgb(161, 160, 160);
+            padding: 0;
+            margin: 0;
+          }
         }
       }
     }
