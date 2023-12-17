@@ -1773,3 +1773,95 @@ body {
     }
   }
 }
+
+@media screen and (max-width: 1600px) {
+  //  contact
+  .contact {
+    .contact-Top {
+      .contact-Title-1 {
+        font-size: 5rem;
+      }
+
+      .contact-title-2 {
+        display: flex;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        font-family: $fontThree;
+        color: white;
+        padding: 0;
+        margin: 0;
+
+        .contact-Title-2-1 {
+          font-family: $fontThree;
+          color: #29a587;
+        }
+
+        .contact-Title-2-2 {
+          font-family: $fontFour;
+          color: white;
+          font-size: 3rem;
+        }
+      }
+    }
+
+    .contact-Bottom {
+      .contact-Left-Side {
+        .contact-Decoration-Bar {
+          width: 5%;
+        }
+      }
+
+      .contact-Mid-Side {
+        width: 25%;
+        height: 100%;
+        margin-left: 0;
+
+        .contact-Card {
+          #contact-Mid-Icon {
+            font-size: 0.5rem;
+          }
+
+          .contact-Mid-Line {
+            margin-right: 15px;
+          }
+
+          .contact-Mid-Info {
+            .contact-Info-Text-H3 {
+              font-size: 1.3rem;
+            }
+
+            .contact-Info-Text-P {
+              font-size: 0.6rem;
+            }
+          }
+        }
+      }
+
+      .contact-Right-Side {
+        width: 70%;
+        margin-left: 5rem;
+
+        .form {
+          .subject-Wrap {
+            .subject-Input {
+              width: 94%;
+              padding: 1rem;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+//  Contact Responsvness
+
+@media screen and (max-width: 950px) {
+  // Styles for large screens (e.g., laptops)
+}
+
+@media screen and (max-width: 768px) {
+  // Styles for large screens (e.g., laptops)
+}
