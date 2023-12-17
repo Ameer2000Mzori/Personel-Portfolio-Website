@@ -1395,4 +1395,46 @@ body {
       }
     }
   }
+
+  .contact-Bottom {
+    display: flex;
+
+    .contact-Left-Side {
+      .contact-Decoration-Bar {
+        height: 100%;
+        width: 25%;
+        text-align: center;
+        align-items: center;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        .contact-Cercle-One {
+          width: 45px;
+          height: 45px;
+          background-color: #1d222a;
+          border: solid snow 1px;
+          border-radius: 50%;
+        }
+
+        .contact-Line-El {
+          height: 60%;
+          width: 1px;
+          background-color: #1d222a;
+          border: solid snow 1px;
+          border-top: none;
+          border-bottom: none;
+        }
+
+        .contact-Cercle-Two {
+          width: 45px;
+          height: 45px;
+          background-color: #1d222a;
+          border: solid snow 1px;
+          border-radius: 50%;
+        }
+      }
+    }
+  }
 }
