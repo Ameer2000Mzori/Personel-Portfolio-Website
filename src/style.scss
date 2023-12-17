@@ -1349,3 +1349,50 @@ body {
     }
   }
 }
+
+//  contact
+.contact {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: clamp(500px, 100%, 1000px);
+  margin-top: 5rem;
+
+  .contact-Top {
+    width: 80%;
+
+    .contact-Title-1 {
+      font-size: 6rem;
+      font-family: $fontThree;
+      color: white;
+      padding: 0;
+      margin: 0;
+    }
+
+    .contact-title-2 {
+      display: flex;
+      text-align: center;
+      align-items: center;
+      justify-content: center;
+      gap: 15px;
+      font-family: $fontThree;
+      color: white;
+      padding: 0;
+      margin: 0;
+
+      .contact-Title-2-1 {
+        font-family: $fontThree;
+        color: #29a587;
+      }
+
+      .contact-Title-2-2 {
+        font-family: $fontFour;
+        color: white;
+        font-size: 3rem;
+      }
+    }
+  }
+}

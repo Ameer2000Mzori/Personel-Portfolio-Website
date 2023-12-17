@@ -1271,3 +1271,49 @@ body {
     display: none;
   }
 }
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: clamp(500px, 100%, 1000px);
+  margin-top: 5rem;
+}
+
+.contact .contact-Top {
+  width: 80%;
+}
+
+.contact .contact-Top .contact-Title-1 {
+  font-size: 6rem;
+  font-family: "Rowdies", sans-serif;
+  color: white;
+  padding: 0;
+  margin: 0;
+}
+
+.contact .contact-Top .contact-title-2 {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  font-family: "Rowdies", sans-serif;
+  color: white;
+  padding: 0;
+  margin: 0;
+}
+
+.contact .contact-Top .contact-title-2 .contact-Title-2-1 {
+  font-family: "Rowdies", sans-serif;
+  color: #29a587;
+}
+
+.contact .contact-Top .contact-title-2 .contact-Title-2-2 {
+  font-family: "Caveat", cursive;
+  color: white;
+  font-size: 3rem;
+}
